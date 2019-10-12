@@ -1,0 +1,3137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>东方购物</title>
+    <link rel="shortcut icon" type="image/x-icon" href="https://cdnimg.ocj.com.cn/common/images/favicon.png" />
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/ocj.css">
+    <link rel="stylesheet" href="css/ocjheader.css">
+    <link rel="stylesheet" href="font/iconfont.css">
+</head>
+
+<body>
+    <div id="ocj">
+        <!-- 头部 -->
+        <header>
+            <div id="ocj-header">
+                <div class="conten">
+                    <div class="com-left">
+                        <span class="welc">
+                            欢迎光临&nbsp;OCJ.COM.CN
+                        </span>
+                        <div class="realo" style="display: none">
+                            <span id="login">登录</span>
+                            <span id="register">注册</span>
+                            <span class="delivery">送货至:</span>
+                        </div>
+                        <div class="tuichu" style="line-height: 33px;display:block">
+                            <span id="out">退出</span>
+                            <span class="delivery">送货至:</span>
+                        </div>
+                        <div class="addres">
+                            <span class="addr iconfont icon-weizhi"></span>
+                            <span class="city">上海</span>
+                            <span class="heel">[更换]</span>
+                        </div>
+                    </div>
+                    <div class="com-rigth fr">
+                        <div class="my">
+                            <span class="iconfont icon-wode"></span>
+                            <p>我的购物</p>
+                            <div class="sx iconfont icon-iconfront"></div>
+                            <div class="my-nav">
+                                <ul>
+                                    <li>订单查询</li>
+                                    <li>积分查询</li>
+                                    <li>抵用券查询</li>
+                                    <li>我的收藏</li>
+                                    <li>修改信息</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="guke">
+                            <span class="iconfont icon-kefu"></span>
+                            <p>顾客中心</p>
+                        </div>
+                        <div class="mobelp">
+                            <span class="iconfont icon-shouji"></span>
+                            <p>移动版</p>
+                        </div>
+                        <div class="TVser">
+                            <span class="iconfont icon-dianshi"></span>
+                            <p>TV版</p>
+                        </div>
+                        <div class="weixin">
+                            <span class="iconfont icon-erweima"></span>
+                            <p>微信</p>
+                            <div class="QR">
+                                <p>扫一扫，关注我们</p>
+                                <div class="QRimg">
+                                    <img src="img/QR.jpg" alt="">
+                                </div>
+                                <div style="color: #7d8289;">微信服务号：OCJ_FW</div>
+                                <div style=" color: #a30000;">关注并绑定账户送5元积分哟</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 侧栏 -->
+            <div class="side-bar">
+                <div class="silderNavtop">
+                    <img src="img/1_20190203100732_48.jpg" alt="">
+                </div>
+                <div class="rightFixNavButton">
+                    <div class="rightFixLink">
+                        <a href="#shipin">食品饮料</a>
+                    </div>
+                    <div class="rightFixLink">
+                        <a href="#jiaju">家具厨房</a>
+                    </div>
+                    <div class="rightFixLink">
+                        <a href="#jiadian">3c家电</a>
+                    </div>
+                    <div class="rightFixLink">
+                        <a href="#fushi ">时尚服饰</a>
+                    </div>
+                </div>
+                <div class="server">
+                    <div class="bird">
+                        <a href="###">东东客服</a>
+                    </div>
+                    <div class="go-top">
+                        <a href="#ocj-header">回到顶部</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 搜索 -->
+            <div class="search">
+                <div class="conten">
+                    <div class="logo">
+                        <img src="img/logo.png" alt="">
+                    </div>
+                    <div class="tm">
+                        <img src="img/tm.png" alt="">
+                        <img src="img/bg.loading.1.gif" alt="" class="loading">
+                    </div>
+                    <div class="search-box">
+                        <div class="search-bar">
+                            <form action="">
+                                <input type="text" id="sea-input">
+                                <input type="button" value="搜索" id="sear-btn">
+                            </form>
+                        </div>
+                        <div class="search-down">
+                            <ul id="keywords">
+                                <li>
+                                    <a href="###">奥菜馆上新</a>
+                                </li>
+                                <li>
+                                    <a href="###">时令鲜生</a>
+                                </li>
+                                <li>
+                                    <a href="###">秋日出游正当时</a>
+                                </li>
+                                <li>
+                                    <a href="###">初秋美肤</a>
+                                </li>
+                                <li>
+                                    <a href="###">超级电器节</a>
+                                </li>
+                            </ul>
+                            <div class="hotlist fr">
+                                <span class="aixin"></span>
+                                <a href="###">销售排行榜</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="goodscar">
+                        <span class="glist iconfont icon-gouwuche"></span>
+                        <p id="shoppingcar">购物车</p>
+                        <span class="fx iconfont icon-iconfront"></span>
+                        <span class="snum">0</span>
+                        <div class="gosm">
+                            <p class="kong">购物车还没东西哟，快去看一看吧</p>
+                            <!-- <div class="goodscon">
+                                        <div class="goodsconItem">
+                                            <div class="goodsconItemimg">
+                                                <img src="img/15100627P.jpg" alt="">
+                                            </div>
+                                            <div class="goodsconItemtitle">米技(MIJI) 快速不锈钢电水壶 WEK-03 1.7L(加热快,容量大)</div>
+                                            <div class="goodsconItemprice">
+                                                <em class="price">￥259</em>
+                                                x
+                                                <span>1</span>
+                                            </div>
+                                            <div class="goodsconItembo">
+                                                <span class="color">红色</span>
+                                                <span class="delte fr">删除</span>
+                                            </div>
+                                        </div>
+                                        <div class="goodsconItem">
+                                            <div class="goodsconItemimg">
+                                                <img src="img/15100627P.jpg" alt="">
+                                            </div>
+                                            <div class="goodsconItemtitle">米技(MIJI) 快速不锈钢电水壶 WEK-03 1.7L(加热快,容量大)</div>
+                                            <div class="goodsconItemprice">
+                                                <em class="price">￥259</em>
+                                                x
+                                                <span>1</span>
+                                            </div>
+                                            <div class="goodsconItembo">
+                                                <span class="color">红色</span>
+                                                <span class="delte fr">删除</span>
+                                            </div>
+                                        </div>
+                                        <div class="func">
+                                            <div class="Snumber">
+                                                <div class="Snumberlef">
+                                                    <span class="snumber" style="color: #239cdc">1</span>/1
+                                                </div>
+                                                <div class="Snumberrig">
+                                                    <div class="SnumberrigTop">
+                                                        <div class=" totalize">
+                                                            共<span style="color: #ea0505">2</span>件商品总计：￥ <span
+                                                                class=" zongjia">557.00</span>
+                                                        </div>
+                                                        <div class="Discount">
+                                                            优惠：￥<span>-0.00</span>
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="SnumberrigBot">
+                                                        <div class="copewith">
+                                                            应付金额：￥<em style="color: #ea0505">557.00</em>
+                                                        </div>
+                                                        <div class="Settlement">去购物车结算</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div> -->
+                        </div>
+                    </div>
+                    <div class="yeshanghai">
+                        <img src="img/1_20190919171128_49.png" alt="">
+                    </div>
+                </div>
+            </div>
+
+        </header>
+
+        <!-- 导航栏 -->
+        <div class="header-menu">
+            <div class="conten">
+                <a href="###" class="header-bar">
+                    全部商品分类
+                </a>
+                <a href="###" class="header-tab">首页</a>
+                <a href="###" class="header-tab">TV购物</a>
+                <a href="###" class="header-tab">团购</a>
+                <a href="###" class="header-tab">全球购</a>
+                <a href="###" class="header-tab">商城</a>
+                <a href="###" class="header-tab">特惠活动</a>
+                <a href="###" class="header-tab">会员俱乐部</a>
+                <a href="###" class="header-tab">企业官网</a>
+            </div>
+        </div>
+
+        <!-- 主内容 -->
+        <div class="ocj-main clearfix">
+            <div class="Box-main">
+                <div class="conten">
+                    <!-- 左内容 -->
+                    <div class="ser-bar">
+                        <div class="bar-top">
+                            <ul id="bar-list">
+                                <li class="iconone onec">
+                                    <span class="icon iconfont icon-canju"></span>
+                                    <span class="neirong">厨房用具、厨房电器</span>
+                                    <div class="commcent">
+                                        <div class="comLeftm">
+                                            <p>厨房电器</p>
+                                            <ul class="comList">
+                                                <li><span class="listT">电水壶/电水瓶</span>
+                                                    <span>电磁炉</span>
+                                                    <span>电饭煲</span>
+                                                    <span style="color: #00BFFF">榨汁/搅拌</span>
+                                                </li>
+                                                <li><span>豆浆机</span>
+                                                    <span>电压力煲</span>
+                                                    <span style="color: #00BFFF">酸奶机</span>
+                                                    <span>面包机/多士炉</span>
+                                                </li>
+                                                <li>
+                                                    <span>微波炉/烤箱</span>
+                                                    <span style="color: #00BFFF">抽油烟机/灶器</span>
+                                                    <span>煮蛋器</span>
+                                                </li>
+                                                <li>
+                                                    <span>电饼档/烧烤箱</span>
+                                                    <span>碗筷消毒</span>
+                                                    <span>咖啡机</span>
+                                                </li>
+                                                <li>
+                                                    <span>DIY小家电</span>
+                                                    <span>电炖/电蒸锅</span>
+                                                </li>
+                                            </ul>
+                                            <p>厨房用品</p>
+                                            <ul class="comList">
+                                                <li><span style="color: #00BFFF">炒锅</span>
+                                                    <span>煎锅/平底锅</span>
+                                                    <span>汤/奶锅</span>
+                                                    <span>煮锅/炖锅</span>
+                                                </li>
+                                                <li><span>套锅</span>
+                                                    <span>厨盆水槽</span>
+                                                    <span>刀具</span>
+                                                    <span>砧板</span>
+                                                    <span>厨房用具</span>
+                                                </li>
+                                                <li>
+                                                    <span>厨房收纳</span>
+                                                </li>
+                                            </ul>
+                                            <p>餐具容器</p>
+                                            <ul class="comList">
+                                                <li>
+                                                    <span>保温盒/壶</span>
+                                                    <span>保温杯</span>
+                                                    <spans tyle="color: #00BFFF">保险容器</span>
+                                                        <span>餐具</span>
+                                                </li>
+                                                <li>
+                                                    <span>水/茶具</span>
+                                                    <span>酒具</span>
+                                                    <span>果盘</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="commcentmain">
+                                            <img src="img/1_20160503145729_29.jpg" alt="">
+                                            <img src="img/1_20170523170537_25.jpg" alt="">
+                                        </div>
+                                        <div class="commcenRight">
+                                            <img src="img/1_20170804132455_100.jpg" alt="">
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="onec">
+                                    <span class="icon iconfont icon-jiaju"></span>
+                                    <span class="neirong">家具、家饰</span>
+                                    <div class="commcent">
+                                        <div class="comLeftm" style="width: 283px;padding:0;border:none">
+                                            <p>厨房电器</p>
+                                            <ul class="comList">
+                                                <li><span>电水壶/电水瓶</span>
+                                                    <span>电磁炉</span>
+                                                    <span>电饭煲</span>
+                                                    <span style="color: #00BFFF">榨汁/搅拌</span>
+                                                </li>
+                                                <li><span>豆浆机</span>
+                                                    <span>电压力煲</span>
+                                                    <span style="color: #00BFFF">酸奶机</span>
+                                                    <span>面包机/多士炉</span>
+                                                </li>
+                                                <li>
+                                                    <span>微波炉/烤箱</span>
+                                                    <span style="color: #00BFFF">抽油烟机/灶器</span>
+                                                    <span>煮蛋器</span>
+                                                </li>
+                                                <li>
+                                                    <span>电饼档/烧烤箱</span>
+                                                    <span>碗筷消毒</span>
+                                                    <span>咖啡机</span>
+                                                </li>
+                                                <li>
+                                                    <span>DIY小家电</span>
+                                                    <span>电炖/电蒸锅</span>
+                                                </li>
+                                            </ul>
+                                            <p>厨房用品</p>
+                                            <ul class="comList">
+                                                <li><span style="color: #00BFFF">炒锅</span>
+                                                    <span>煎锅/平底锅</span>
+                                                    <span>汤/奶锅</span>
+                                                    <span>煮锅/炖锅</span>
+                                                </li>
+                                                <li><span>套锅</span>
+                                                    <span>厨盆水槽</span>
+                                                    <span>刀具</span>
+                                                    <span>砧板</span>
+                                                    <span>厨房用具</span>
+                                                </li>
+                                                <li>
+                                                    <span>厨房收纳</span>
+                                                </li>
+                                            </ul>
+                                            <p>餐具容器</p>
+                                            <ul class="comList">
+                                                <li>
+                                                    <span>保温盒/壶</span>
+                                                    <span>保温杯</span>
+                                                    <spanstyle="color: #00BFFF">保险容器</span>
+                                                        <span>餐具</span>
+                                                </li>
+                                                <li>
+                                                    <span>水/茶具</span>
+                                                    <span>酒具</span>
+                                                    <span>果盘</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="comLeftm" style="width: 283px;padding-right: 28px">
+                                            <p>厨房电器</p>
+                                            <ul class="comList">
+                                                <li><span>电水壶/电水瓶</span>
+                                                    <span>电磁炉</span>
+                                                    <span>电饭煲</span>
+                                                    <span style="color: #00BFFF">榨汁/搅拌</span>
+                                                </li>
+                                                <li><span>豆浆机</span>
+                                                    <span>电压力煲</span>
+                                                    <span style="color: #00BFFF">酸奶机</span>
+                                                    <span>面包机/多士炉</span>
+                                                </li>
+                                                <li>
+                                                    <span>微波炉/烤箱</span>
+                                                    <span style="color: #00BFFF">抽油烟机/灶器</span>
+                                                    <span>煮蛋器</span>
+                                                </li>
+                                                <li>
+                                                    <span>电饼档/烧烤箱</span>
+                                                    <span>碗筷消毒</span>
+                                                    <span>咖啡机</span>
+                                                </li>
+                                                <li>
+                                                    <span>DIY小家电</span>
+                                                    <span>电炖/电蒸锅</span>
+                                                </li>
+                                            </ul>
+                                            <p>厨房用品</p>
+                                            <ul class="comList">
+                                                <li><span style="color: #00BFFF">炒锅</span>
+                                                    <span>煎锅/平底锅</span>
+                                                    <span>汤/奶锅</span>
+                                                    <span>煮锅/炖锅</span>
+                                                </li>
+                                                <li><span>套锅</span>
+                                                    <span>厨盆水槽</span>
+                                                    <span>刀具</span>
+                                                    <span>砧板</span>
+                                                    <span>厨房用具</span>
+                                                </li>
+                                                <li>
+                                                    <span>厨房收纳</span>
+                                                </li>
+                                            </ul>
+                                            <p>餐具容器</p>
+                                            <ul class="comList">
+                                                <li>
+                                                    <span>保温盒/壶</span>
+                                                    <span>保温杯</span>
+                                                    <spanstyle="color: #00BFFF">保险容器</span>
+                                                        <span>餐具</span>
+                                                </li>
+                                                <li>
+                                                    <span>水/茶具</span>
+                                                    <span>酒具</span>
+                                                    <span>果盘</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="commcenRight">
+                                            <img src="img/2_20170106113811_41.jpg" alt="">
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="onec">
+                                    <span class="icon iconfont icon-panzi"></span>
+                                    <span class="neirong">食品饮料</span>
+                                    <div class="commcent">
+                                        <div class="comLeftm" style="width: 283px;padding:0;border:none">
+                                            <p>厨房电器</p>
+                                            <ul class="comList">
+                                                <li><span>电水壶/电水瓶</span>
+                                                    <span>电磁炉</span>
+                                                    <span>电饭煲</span>
+                                                    <span style="color: #00BFFF">榨汁/搅拌</span>
+                                                </li>
+                                                <li><span>豆浆机</span>
+                                                    <span>电压力煲</span>
+                                                    <span style="color: #00BFFF">酸奶机</span>
+                                                    <span>面包机/多士炉</span>
+                                                </li>
+                                                <li>
+                                                    <span>微波炉/烤箱</span>
+                                                    <span style="color: #00BFFF">抽油烟机/灶器</span>
+                                                    <span>煮蛋器</span>
+                                                </li>
+                                                <li>
+                                                    <span>电饼档/烧烤箱</span>
+                                                    <span>碗筷消毒</span>
+                                                    <span>咖啡机</span>
+                                                </li>
+                                                <li>
+                                                    <span>DIY小家电</span>
+                                                    <span>电炖/电蒸锅</span>
+                                                </li>
+                                            </ul>
+                                            <p>厨房用品</p>
+                                            <ul class="comList">
+                                                <li><span style="color: #00BFFF">炒锅</span>
+                                                    <span>煎锅/平底锅</span>
+                                                    <span>汤/奶锅</span>
+                                                    <span>煮锅/炖锅</span>
+                                                </li>
+                                                <li><span>套锅</span>
+                                                    <span>厨盆水槽</span>
+                                                    <span>刀具</span>
+                                                    <span>砧板</span>
+                                                    <span>厨房用具</span>
+                                                </li>
+                                                <li>
+                                                    <span>厨房收纳</span>
+                                                </li>
+                                            </ul>
+                                            <p>餐具容器</p>
+                                            <ul class="comList">
+                                                <li>
+                                                    <span>保温盒/壶</span>
+                                                    <span>保温杯</span>
+                                                    <spanstyle="color: #00BFFF">保险容器</span>
+                                                        <span>餐具</span>
+                                                </li>
+                                                <li>
+                                                    <span>水/茶具</span>
+                                                    <span>酒具</span>
+                                                    <span>果盘</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="comLeftm" style="width: 283px;padding-right: 28px">
+                                            <p>厨房电器</p>
+                                            <ul class="comList">
+                                                <li><span>电水壶/电水瓶</span>
+                                                    <span>电磁炉</span>
+                                                    <span>电饭煲</span>
+                                                    <span style="color: #00BFFF">榨汁/搅拌</span>
+                                                </li>
+                                                <li><span>豆浆机</span>
+                                                    <span>电压力煲</span>
+                                                    <span style="color: #00BFFF">酸奶机</span>
+                                                    <span>面包机/多士炉</span>
+                                                </li>
+                                                <li>
+                                                    <span>微波炉/烤箱</span>
+                                                    <span style="color: #00BFFF">抽油烟机/灶器</span>
+                                                    <span>煮蛋器</span>
+                                                </li>
+                                                <li>
+                                                    <span>电饼档/烧烤箱</span>
+                                                    <span>碗筷消毒</span>
+                                                    <span>咖啡机</span>
+                                                </li>
+                                                <li>
+                                                    <span>DIY小家电</span>
+                                                    <span>电炖/电蒸锅</span>
+                                                </li>
+                                            </ul>
+                                            <p>厨房用品</p>
+                                            <ul class="comList">
+                                                <li><span style="color: #00BFFF">炒锅</span>
+                                                    <span>煎锅/平底锅</span>
+                                                    <span>汤/奶锅</span>
+                                                    <span>煮锅/炖锅</span>
+                                                </li>
+                                                <li><span>套锅</span>
+                                                    <span>厨盆水槽</span>
+                                                    <span>刀具</span>
+                                                    <span>砧板</span>
+                                                    <span>厨房用具</span>
+                                                </li>
+                                                <li>
+                                                    <span>厨房收纳</span>
+                                                </li>
+                                            </ul>
+                                            <p>餐具容器</p>
+                                            <ul class="comList">
+                                                <li>
+                                                    <span>保温盒/壶</span>
+                                                    <span>保温杯</span>
+                                                    <spanstyle="color: #00BFFF">保险容器</span>
+                                                        <span>餐具</span>
+                                                </li>
+                                                <li>
+                                                    <span>水/茶具</span>
+                                                    <span>酒具</span>
+                                                    <span>果盘</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="commcenRight">
+                                            <img src="img/2_20170106113811_41.jpg" alt="">
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="onec">
+                                    <span class="icon iconfont icon-dianshi"></span>
+                                    <span class="neirong">手机、数码、电脑</span>
+                                    <div class="commcent">
+                                        <div class="comLeftm">
+                                            <p>厨房电器</p>
+                                            <ul class="comList">
+                                                <li><span>电水壶/电水瓶</span>
+                                                    <span>电磁炉</span>
+                                                    <span>电饭煲</span>
+                                                    <span style="color: #00BFFF">榨汁/搅拌</span>
+                                                </li>
+                                                <li><span>豆浆机</span>
+                                                    <span>电压力煲</span>
+                                                    <span style="color: #00BFFF">酸奶机</span>
+                                                    <span>面包机/多士炉</span>
+                                                </li>
+                                                <li>
+                                                    <span>微波炉/烤箱</span>
+                                                    <span style="color: #00BFFF">抽油烟机/灶器</span>
+                                                    <span>煮蛋器</span>
+                                                </li>
+                                                <li>
+                                                    <span>电饼档/烧烤箱</span>
+                                                    <span>碗筷消毒</span>
+                                                    <span>咖啡机</span>
+                                                </li>
+                                                <li>
+                                                    <span>DIY小家电</span>
+                                                    <span>电炖/电蒸锅</span>
+                                                </li>
+                                            </ul>
+                                            <p>厨房用品</p>
+                                            <ul class="comList">
+                                                <li><span style="color: #00BFFF">炒锅</span>
+                                                    <span>煎锅/平底锅</span>
+                                                    <span>汤/奶锅</span>
+                                                    <span>煮锅/炖锅</span>
+                                                </li>
+                                                <li><span>套锅</span>
+                                                    <span>厨盆水槽</span>
+                                                    <span>刀具</span>
+                                                    <span>砧板</span>
+                                                    <span>厨房用具</span>
+                                                </li>
+                                                <li>
+                                                    <span>厨房收纳</span>
+                                                </li>
+                                            </ul>
+                                            <p>餐具容器</p>
+                                            <ul class="comList">
+                                                <li>
+                                                    <span>保温盒/壶</span>
+                                                    <span>保温杯</span>
+                                                    <spanstyle="color: #00BFFF">保险容器</span>
+                                                        <span>餐具</span>
+                                                </li>
+                                                <li>
+                                                    <span>水/茶具</span>
+                                                    <span>酒具</span>
+                                                    <span>果盘</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="commcentmain">
+                                            <img src="img/1_20160503145729_29.jpg" alt="">
+                                            <img src="img/1_20170523170537_25.jpg" alt="">
+                                        </div>
+                                        <div class="commcenRight">
+                                            <img src="img/1_20170804132455_100.jpg" alt="">
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="onec">
+                                    <span class="icon iconfont icon-xiyiji"></span>
+                                    <span class="neirong">家用电器</span>
+                                    <div class="commcent">
+                                        <div class="comLeftm">
+                                            <p>厨房电器</p>
+                                            <ul class="comList">
+                                                <li><span>电水壶/电水瓶</span>
+                                                    <span>电磁炉</span>
+                                                    <span>电饭煲</span>
+                                                    <span style="color: #00BFFF">榨汁/搅拌</span>
+                                                </li>
+                                                <li><span>豆浆机</span>
+                                                    <span>电压力煲</span>
+                                                    <span style="color: #00BFFF">酸奶机</span>
+                                                    <span>面包机/多士炉</span>
+                                                </li>
+                                                <li>
+                                                    <span>微波炉/烤箱</span>
+                                                    <span style="color: #00BFFF">抽油烟机/灶器</span>
+                                                    <span>煮蛋器</span>
+                                                </li>
+                                                <li>
+                                                    <span>电饼档/烧烤箱</span>
+                                                    <span>碗筷消毒</span>
+                                                    <span>咖啡机</span>
+                                                </li>
+                                                <li>
+                                                    <span>DIY小家电</span>
+                                                    <span>电炖/电蒸锅</span>
+                                                </li>
+                                            </ul>
+                                            <p>厨房用品</p>
+                                            <ul class="comList">
+                                                <li><span style="color: #00BFFF">炒锅</span>
+                                                    <span>煎锅/平底锅</span>
+                                                    <span>汤/奶锅</span>
+                                                    <span>煮锅/炖锅</span>
+                                                </li>
+                                                <li><span>套锅</span>
+                                                    <span>厨盆水槽</span>
+                                                    <span>刀具</span>
+                                                    <span>砧板</span>
+                                                    <span>厨房用具</span>
+                                                </li>
+                                                <li>
+                                                    <span>厨房收纳</span>
+                                                </li>
+                                            </ul>
+                                            <p>餐具容器</p>
+                                            <ul class="comList">
+                                                <li>
+                                                    <span>保温盒/壶</span>
+                                                    <span>保温杯</span>
+                                                    <spanstyle="color: #00BFFF">保险容器</span>
+                                                        <span>餐具</span>
+                                                </li>
+                                                <li>
+                                                    <span>水/茶具</span>
+                                                    <span>酒具</span>
+                                                    <span>果盘</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="commcentmain">
+                                            <img src="img/1_20160503145729_29.jpg" alt="">
+                                            <img src="img/1_20170523170537_25.jpg" alt="">
+                                        </div>
+                                        <div class="commcenRight">
+                                            <img src="img/1_20170804132455_100.jpg" alt="">
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="onec">
+                                    <span class="icon iconfont icon-huazhuangpin"></span>
+                                    <span class="neirong">化妆品、洗护沐浴</span>
+                                    <div class="commcent">
+                                        <div class="comLeftm" style="width: 283px;padding:0;border:none">
+                                            <p>厨房电器</p>
+                                            <ul class="comList">
+                                                <li><span>电水壶/电水瓶</span>
+                                                    <span>电磁炉</span>
+                                                    <span>电饭煲</span>
+                                                    <span style="color: #00BFFF">榨汁/搅拌</span>
+                                                </li>
+                                                <li><span>豆浆机</span>
+                                                    <span>电压力煲</span>
+                                                    <span style="color: #00BFFF">酸奶机</span>
+                                                    <span>面包机/多士炉</span>
+                                                </li>
+                                                <li>
+                                                    <span>微波炉/烤箱</span>
+                                                    <span style="color: #00BFFF">抽油烟机/灶器</span>
+                                                    <span>煮蛋器</span>
+                                                </li>
+                                                <li>
+                                                    <span>电饼档/烧烤箱</span>
+                                                    <span>碗筷消毒</span>
+                                                    <span>咖啡机</span>
+                                                </li>
+                                                <li>
+                                                    <span>DIY小家电</span>
+                                                    <span>电炖/电蒸锅</span>
+                                                </li>
+                                            </ul>
+                                            <p>厨房用品</p>
+                                            <ul class="comList">
+                                                <li><span style="color: #00BFFF">炒锅</span>
+                                                    <span>煎锅/平底锅</span>
+                                                    <span>汤/奶锅</span>
+                                                    <span>煮锅/炖锅</span>
+                                                </li>
+                                                <li><span>套锅</span>
+                                                    <span>厨盆水槽</span>
+                                                    <span>刀具</span>
+                                                    <span>砧板</span>
+                                                    <span>厨房用具</span>
+                                                </li>
+                                                <li>
+                                                    <span>厨房收纳</span>
+                                                </li>
+                                            </ul>
+                                            <p>餐具容器</p>
+                                            <ul class="comList">
+                                                <li>
+                                                    <span>保温盒/壶</span>
+                                                    <span>保温杯</span>
+                                                    <spanstyle="color: #00BFFF">保险容器</span>
+                                                        <span>餐具</span>
+                                                </li>
+                                                <li>
+                                                    <span>水/茶具</span>
+                                                    <span>酒具</span>
+                                                    <span>果盘</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="comLeftm" style="width: 283px;padding-right: 28px">
+                                            <p>厨房电器</p>
+                                            <ul class="comList">
+                                                <li><span>电水壶/电水瓶</span>
+                                                    <span>电磁炉</span>
+                                                    <span>电饭煲</span>
+                                                    <span style="color: #00BFFF">榨汁/搅拌</span>
+                                                </li>
+                                                <li><span>豆浆机</span>
+                                                    <span>电压力煲</span>
+                                                    <span style="color: #00BFFF">酸奶机</span>
+                                                    <span>面包机/多士炉</span>
+                                                </li>
+                                                <li>
+                                                    <span>微波炉/烤箱</span>
+                                                    <span style="color: #00BFFF">抽油烟机/灶器</span>
+                                                    <span>煮蛋器</span>
+                                                </li>
+                                                <li>
+                                                    <span>电饼档/烧烤箱</span>
+                                                    <span>碗筷消毒</span>
+                                                    <span>咖啡机</span>
+                                                </li>
+                                                <li>
+                                                    <span>DIY小家电</span>
+                                                    <span>电炖/电蒸锅</span>
+                                                </li>
+                                            </ul>
+                                            <p>厨房用品</p>
+                                            <ul class="comList">
+                                                <li><span style="color: #00BFFF">炒锅</span>
+                                                    <span>煎锅/平底锅</span>
+                                                    <span>汤/奶锅</span>
+                                                    <span>煮锅/炖锅</span>
+                                                </li>
+                                                <li><span>套锅</span>
+                                                    <span>厨盆水槽</span>
+                                                    <span>刀具</span>
+                                                    <span>砧板</span>
+                                                    <span>厨房用具</span>
+                                                </li>
+                                                <li>
+                                                    <span>厨房收纳</span>
+                                                </li>
+                                            </ul>
+                                            <p>餐具容器</p>
+                                            <ul class="comList">
+                                                <li>
+                                                    <span>保温盒/壶</span>
+                                                    <span>保温杯</span>
+                                                    <spanstyle="color: #00BFFF">保险容器</span>
+                                                        <span>餐具</span>
+                                                </li>
+                                                <li>
+                                                    <span>水/茶具</span>
+                                                    <span>酒具</span>
+                                                    <span>果盘</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="commcenRight">
+                                            <img src="img/2_20170106113811_41.jpg" alt="">
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="onec">
+                                    <span class="icon iconfont icon-qunzi"></span>
+                                    <span class="neirong">服装、鞋靴、箱包、配饰</span>
+                                    <div class="commcent">
+                                        <div class="comLeftm" style="width: 283px;padding:0;border:none">
+                                            <p>厨房电器</p>
+                                            <ul class="comList">
+                                                <li><span>电水壶/电水瓶</span>
+                                                    <span>电磁炉</span>
+                                                    <span>电饭煲</span>
+                                                    <span style="color: #00BFFF">榨汁/搅拌</span>
+                                                </li>
+                                                <li><span>豆浆机</span>
+                                                    <span>电压力煲</span>
+                                                    <span style="color: #00BFFF">酸奶机</span>
+                                                    <span>面包机/多士炉</span>
+                                                </li>
+                                                <li>
+                                                    <span>微波炉/烤箱</span>
+                                                    <span style="color: #00BFFF">抽油烟机/灶器</span>
+                                                    <span>煮蛋器</span>
+                                                </li>
+                                                <li>
+                                                    <span>电饼档/烧烤箱</span>
+                                                    <span>碗筷消毒</span>
+                                                    <span>咖啡机</span>
+                                                </li>
+                                                <li>
+                                                    <span>DIY小家电</span>
+                                                    <span>电炖/电蒸锅</span>
+                                                </li>
+                                            </ul>
+                                            <p>厨房用品</p>
+                                            <ul class="comList">
+                                                <li><span style="color: #00BFFF">炒锅</span>
+                                                    <span>煎锅/平底锅</span>
+                                                    <span>汤/奶锅</span>
+                                                    <span>煮锅/炖锅</span>
+                                                </li>
+                                                <li><span>套锅</span>
+                                                    <span>厨盆水槽</span>
+                                                    <span>刀具</span>
+                                                    <span>砧板</span>
+                                                    <span>厨房用具</span>
+                                                </li>
+                                                <li>
+                                                    <span>厨房收纳</span>
+                                                </li>
+                                            </ul>
+                                            <p>餐具容器</p>
+                                            <ul class="comList">
+                                                <li>
+                                                    <span>保温盒/壶</span>
+                                                    <span>保温杯</span>
+                                                    <spanstyle="color: #00BFFF">保险容器</span>
+                                                        <span>餐具</span>
+                                                </li>
+                                                <li>
+                                                    <span>水/茶具</span>
+                                                    <span>酒具</span>
+                                                    <span>果盘</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="comLeftm" style="width: 283px;padding-right: 28px">
+                                            <p>厨房电器</p>
+                                            <ul class="comList">
+                                                <li><span>电水壶/电水瓶</span>
+                                                    <span>电磁炉</span>
+                                                    <span>电饭煲</span>
+                                                    <span style="color: #00BFFF">榨汁/搅拌</span>
+                                                </li>
+                                                <li><span>豆浆机</span>
+                                                    <span>电压力煲</span>
+                                                    <span style="color: #00BFFF">酸奶机</span>
+                                                    <span>面包机/多士炉</span>
+                                                </li>
+                                                <li>
+                                                    <span>微波炉/烤箱</span>
+                                                    <span style="color: #00BFFF">抽油烟机/灶器</span>
+                                                    <span>煮蛋器</span>
+                                                </li>
+                                                <li>
+                                                    <span>电饼档/烧烤箱</span>
+                                                    <span>碗筷消毒</span>
+                                                    <span>咖啡机</span>
+                                                </li>
+                                                <li>
+                                                    <span>DIY小家电</span>
+                                                    <span>电炖/电蒸锅</span>
+                                                </li>
+                                            </ul>
+                                            <p>厨房用品</p>
+                                            <ul class="comList">
+                                                <li><span style="color: #00BFFF">炒锅</span>
+                                                    <span>煎锅/平底锅</span>
+                                                    <span>汤/奶锅</span>
+                                                    <span>煮锅/炖锅</span>
+                                                </li>
+                                                <li><span>套锅</span>
+                                                    <span>厨盆水槽</span>
+                                                    <span>刀具</span>
+                                                    <span>砧板</span>
+                                                    <span>厨房用具</span>
+                                                </li>
+                                                <li>
+                                                    <span>厨房收纳</span>
+                                                </li>
+                                            </ul>
+                                            <p>餐具容器</p>
+                                            <ul class="comList">
+                                                <li>
+                                                    <span>保温盒/壶</span>
+                                                    <span>保温杯</span>
+                                                    <spanstyle="color: #00BFFF">保险容器</span>
+                                                        <span>餐具</span>
+                                                </li>
+                                                <li>
+                                                    <span>水/茶具</span>
+                                                    <span>酒具</span>
+                                                    <span>果盘</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="commcenRight">
+                                            <img src="img/2_20170106113811_41.jpg" alt="">
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="onec">
+                                    <span class="icon iconfont icon-yingerche"></span>
+                                    <span class="neirong">母婴、玩具、宠物</span>
+                                    <div class="commcent">
+                                        <div class="comLeftm" style="width: 283px;padding:0;border:none">
+                                            <p>厨房电器</p>
+                                            <ul class="comList">
+                                                <li><span>电水壶/电水瓶</span>
+                                                    <span>电磁炉</span>
+                                                    <span>电饭煲</span>
+                                                    <span style="color: #00BFFF">榨汁/搅拌</span>
+                                                </li>
+                                                <li><span>豆浆机</span>
+                                                    <span>电压力煲</span>
+                                                    <span style="color: #00BFFF">酸奶机</span>
+                                                    <span>面包机/多士炉</span>
+                                                </li>
+                                                <li>
+                                                    <span>微波炉/烤箱</span>
+                                                    <span style="color: #00BFFF">抽油烟机/灶器</span>
+                                                    <span>煮蛋器</span>
+                                                </li>
+                                                <li>
+                                                    <span>电饼档/烧烤箱</span>
+                                                    <span>碗筷消毒</span>
+                                                    <span>咖啡机</span>
+                                                </li>
+                                                <li>
+                                                    <span>DIY小家电</span>
+                                                    <span>电炖/电蒸锅</span>
+                                                </li>
+                                            </ul>
+                                            <p>厨房用品</p>
+                                            <ul class="comList">
+                                                <li><span style="color: #00BFFF">炒锅</span>
+                                                    <span>煎锅/平底锅</span>
+                                                    <span>汤/奶锅</span>
+                                                    <span>煮锅/炖锅</span>
+                                                </li>
+                                                <li><span>套锅</span>
+                                                    <span>厨盆水槽</span>
+                                                    <span>刀具</span>
+                                                    <span>砧板</span>
+                                                    <span>厨房用具</span>
+                                                </li>
+                                                <li>
+                                                    <span>厨房收纳</span>
+                                                </li>
+                                            </ul>
+                                            <p>餐具容器</p>
+                                            <ul class="comList">
+                                                <li>
+                                                    <span>保温盒/壶</span>
+                                                    <span>保温杯</span>
+                                                    <spanstyle="color: #00BFFF">保险容器</span>
+                                                        <span>餐具</span>
+                                                </li>
+                                                <li>
+                                                    <span>水/茶具</span>
+                                                    <span>酒具</span>
+                                                    <span>果盘</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="comLeftm" style="width: 283px;padding-right: 28px">
+                                            <p>厨房电器</p>
+                                            <ul class="comList">
+                                                <li><span>电水壶/电水瓶</span>
+                                                    <span>电磁炉</span>
+                                                    <span>电饭煲</span>
+                                                    <span style="color: #00BFFF">榨汁/搅拌</span>
+                                                </li>
+                                                <li><span>豆浆机</span>
+                                                    <span>电压力煲</span>
+                                                    <span style="color: #00BFFF">酸奶机</span>
+                                                    <span>面包机/多士炉</span>
+                                                </li>
+                                                <li>
+                                                    <span>微波炉/烤箱</span>
+                                                    <span style="color: #00BFFF">抽油烟机/灶器</span>
+                                                    <span>煮蛋器</span>
+                                                </li>
+                                                <li>
+                                                    <span>电饼档/烧烤箱</span>
+                                                    <span>碗筷消毒</span>
+                                                    <span>咖啡机</span>
+                                                </li>
+                                                <li>
+                                                    <span>DIY小家电</span>
+                                                    <span>电炖/电蒸锅</span>
+                                                </li>
+                                            </ul>
+                                            <p>厨房用品</p>
+                                            <ul class="comList">
+                                                <li><span style="color: #00BFFF">炒锅</span>
+                                                    <span>煎锅/平底锅</span>
+                                                    <span>汤/奶锅</span>
+                                                    <span>煮锅/炖锅</span>
+                                                </li>
+                                                <li><span>套锅</span>
+                                                    <span>厨盆水槽</span>
+                                                    <span>刀具</span>
+                                                    <span>砧板</span>
+                                                    <span>厨房用具</span>
+                                                </li>
+                                                <li>
+                                                    <span>厨房收纳</span>
+                                                </li>
+                                            </ul>
+                                            <p>餐具容器</p>
+                                            <ul class="comList">
+                                                <li>
+                                                    <span>保温盒/壶</span>
+                                                    <span>保温杯</span>
+                                                    <spanstyle="color: #00BFFF">保险容器</span>
+                                                        <span>餐具</span>
+                                                </li>
+                                                <li>
+                                                    <span>水/茶具</span>
+                                                    <span>酒具</span>
+                                                    <span>果盘</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="commcenRight">
+                                            <img src="img/2_20170106113811_41.jpg" alt="">
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="onec">
+                                    <span class="icon iconfont icon-zuanjie"></span>
+                                    <span class="neirong">珠宝、收藏、钟表</span>
+                                    <div class="commcent">
+                                        <div class="comLeftm" style="width: 283px;padding:0;border:none">
+                                            <p>厨房电器</p>
+                                            <ul class="comList">
+                                                <li><span>电水壶/电水瓶</span>
+                                                    <span>电磁炉</span>
+                                                    <span>电饭煲</span>
+                                                    <span style="color: #00BFFF">榨汁/搅拌</span>
+                                                </li>
+                                                <li><span>豆浆机</span>
+                                                    <span>电压力煲</span>
+                                                    <span style="color: #00BFFF">酸奶机</span>
+                                                    <span>面包机/多士炉</span>
+                                                </li>
+                                                <li>
+                                                    <span>微波炉/烤箱</span>
+                                                    <span style="color: #00BFFF">抽油烟机/灶器</span>
+                                                    <span>煮蛋器</span>
+                                                </li>
+                                                <li>
+                                                    <span>电饼档/烧烤箱</span>
+                                                    <span>碗筷消毒</span>
+                                                    <span>咖啡机</span>
+                                                </li>
+                                                <li>
+                                                    <span>DIY小家电</span>
+                                                    <span>电炖/电蒸锅</span>
+                                                </li>
+                                            </ul>
+                                            <p>厨房用品</p>
+                                            <ul class="comList">
+                                                <li><span style="color: #00BFFF">炒锅</span>
+                                                    <span>煎锅/平底锅</span>
+                                                    <span>汤/奶锅</span>
+                                                    <span>煮锅/炖锅</span>
+                                                </li>
+                                                <li><span>套锅</span>
+                                                    <span>厨盆水槽</span>
+                                                    <span>刀具</span>
+                                                    <span>砧板</span>
+                                                    <span>厨房用具</span>
+                                                </li>
+                                                <li>
+                                                    <span>厨房收纳</span>
+                                                </li>
+                                            </ul>
+                                            <p>餐具容器</p>
+                                            <ul class="comList">
+                                                <li>
+                                                    <span>保温盒/壶</span>
+                                                    <span>保温杯</span>
+                                                    <spanstyle="color: #00BFFF">保险容器</span>
+                                                        <span>餐具</span>
+                                                </li>
+                                                <li>
+                                                    <span>水/茶具</span>
+                                                    <span>酒具</span>
+                                                    <span>果盘</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="comLeftm" style="width: 283px;padding-right: 28px">
+                                            <p>厨房电器</p>
+                                            <ul class="comList">
+                                                <li><span>电水壶/电水瓶</span>
+                                                    <span>电磁炉</span>
+                                                    <span>电饭煲</span>
+                                                    <span style="color: #00BFFF">榨汁/搅拌</span>
+                                                </li>
+                                                <li><span>豆浆机</span>
+                                                    <span>电压力煲</span>
+                                                    <span style="color: #00BFFF">酸奶机</span>
+                                                    <span>面包机/多士炉</span>
+                                                </li>
+                                                <li>
+                                                    <span>微波炉/烤箱</span>
+                                                    <span style="color: #00BFFF">抽油烟机/灶器</span>
+                                                    <span>煮蛋器</span>
+                                                </li>
+                                                <li>
+                                                    <span>电饼档/烧烤箱</span>
+                                                    <span>碗筷消毒</span>
+                                                    <span>咖啡机</span>
+                                                </li>
+                                                <li>
+                                                    <span>DIY小家电</span>
+                                                    <span>电炖/电蒸锅</span>
+                                                </li>
+                                            </ul>
+                                            <p>厨房用品</p>
+                                            <ul class="comList">
+                                                <li><span style="color: #00BFFF">炒锅</span>
+                                                    <span>煎锅/平底锅</span>
+                                                    <span>汤/奶锅</span>
+                                                    <span>煮锅/炖锅</span>
+                                                </li>
+                                                <li><span>套锅</span>
+                                                    <span>厨盆水槽</span>
+                                                    <span>刀具</span>
+                                                    <span>砧板</span>
+                                                    <span>厨房用具</span>
+                                                </li>
+                                                <li>
+                                                    <span>厨房收纳</span>
+                                                </li>
+                                            </ul>
+                                            <p>餐具容器</p>
+                                            <ul class="comList">
+                                                <li>
+                                                    <span>保温盒/壶</span>
+                                                    <span>保温杯</span>
+                                                    <spanstyle="color: #00BFFF">保险容器</span>
+                                                        <span>餐具</span>
+                                                </li>
+                                                <li>
+                                                    <span>水/茶具</span>
+                                                    <span>酒具</span>
+                                                    <span>果盘</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="commcenRight">
+                                            <img src="img/2_20170106113811_41.jpg" alt="">
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="onec">
+                                    <span class="icon iconfont icon-baojian"></span>
+                                    <span class="neirong">保健品、户外运动、器械</span>
+                                    <div class="commcent">
+                                        <div class="comLeftm">
+                                            <p>厨房电器</p>
+                                            <ul class="comList">
+                                                <li><span>电水壶/电水瓶</span>
+                                                    <span>电磁炉</span>
+                                                    <span>电饭煲</span>
+                                                    <span style="color: #00BFFF">榨汁/搅拌</span>
+                                                </li>
+                                                <li><span>豆浆机</span>
+                                                    <span>电压力煲</span>
+                                                    <span style="color: #00BFFF">酸奶机</span>
+                                                    <span>面包机/多士炉</span>
+                                                </li>
+                                                <li>
+                                                    <span>微波炉/烤箱</span>
+                                                    <span style="color: #00BFFF">抽油烟机/灶器</span>
+                                                    <span>煮蛋器</span>
+                                                </li>
+                                                <li>
+                                                    <span>电饼档/烧烤箱</span>
+                                                    <span>碗筷消毒</span>
+                                                    <span>咖啡机</span>
+                                                </li>
+                                                <li>
+                                                    <span>DIY小家电</span>
+                                                    <span>电炖/电蒸锅</span>
+                                                </li>
+                                            </ul>
+                                            <p>厨房用品</p>
+                                            <ul class="comList">
+                                                <li><span style="color: #00BFFF">炒锅</span>
+                                                    <span>煎锅/平底锅</span>
+                                                    <span>汤/奶锅</span>
+                                                    <span>煮锅/炖锅</span>
+                                                </li>
+                                                <li><span>套锅</span>
+                                                    <span>厨盆水槽</span>
+                                                    <span>刀具</span>
+                                                    <span>砧板</span>
+                                                    <span>厨房用具</span>
+                                                </li>
+                                                <li>
+                                                    <span>厨房收纳</span>
+                                                </li>
+                                            </ul>
+                                            <p>餐具容器</p>
+                                            <ul class="comList">
+                                                <li>
+                                                    <span>保温盒/壶</span>
+                                                    <span>保温杯</span>
+                                                    <spanstyle="color: #00BFFF">保险容器</span>
+                                                        <span>餐具</span>
+                                                </li>
+                                                <li>
+                                                    <span>水/茶具</span>
+                                                    <span>酒具</span>
+                                                    <span>果盘</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="commcentmain">
+                                            <img src="img/1_20160503145729_29.jpg" alt="">
+                                            <img src="img/1_20170523170537_25.jpg" alt="">
+                                        </div>
+                                        <div class="commcenRight">
+                                            <img src="img/1_20170804132455_100.jpg" alt="">
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="onec">
+                                    <span class="icon iconfont icon-qiche"></span>
+                                    <span class="neirong">汽车、旅游、保险、服务</span>
+                                    <div class="commcent">
+                                        <div class="comLeftm">
+                                            <p>厨房电器</p>
+                                            <ul class="comList">
+                                                <li><span>电水壶/电水瓶</span>
+                                                    <span>电磁炉</span>
+                                                    <span>电饭煲</span>
+                                                    <span style="color: #00BFFF">榨汁/搅拌</span>
+                                                </li>
+                                                <li><span>豆浆机</span>
+                                                    <span>电压力煲</span>
+                                                    <span style="color: #00BFFF">酸奶机</span>
+                                                    <span>面包机/多士炉</span>
+                                                </li>
+                                                <li>
+                                                    <span>微波炉/烤箱</span>
+                                                    <span style="color: #00BFFF">抽油烟机/灶器</span>
+                                                    <span>煮蛋器</span>
+                                                </li>
+                                                <li>
+                                                    <span>电饼档/烧烤箱</span>
+                                                    <span>碗筷消毒</span>
+                                                    <span>咖啡机</span>
+                                                </li>
+                                                <li>
+                                                    <span>DIY小家电</span>
+                                                    <span>电炖/电蒸锅</span>
+                                                </li>
+                                            </ul>
+                                            <p>厨房用品</p>
+                                            <ul class="comList">
+                                                <li><span style="color: #00BFFF">炒锅</span>
+                                                    <span>煎锅/平底锅</span>
+                                                    <span>汤/奶锅</span>
+                                                    <span>煮锅/炖锅</span>
+                                                </li>
+                                                <li><span>套锅</span>
+                                                    <span>厨盆水槽</span>
+                                                    <span>刀具</span>
+                                                    <span>砧板</span>
+                                                    <span>厨房用具</span>
+                                                </li>
+                                                <li>
+                                                    <span>厨房收纳</span>
+                                                </li>
+                                            </ul>
+                                            <p>餐具容器</p>
+                                            <ul class="comList">
+                                                <li>
+                                                    <span>保温盒/壶</span>
+                                                    <span>保温杯</span>
+                                                    <spanstyle="color: #00BFFF">保险容器</span>
+                                                        <span>餐具</span>
+                                                </li>
+                                                <li>
+                                                    <span>水/茶具</span>
+                                                    <span>酒具</span>
+                                                    <span>果盘</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="commcentmain">
+                                            <img src="img/1_20160503145729_29.jpg" alt="">
+                                            <img src="img/1_20170523170537_25.jpg" alt="">
+                                        </div>
+                                        <div class="commcenRight">
+                                            <img src="img/1_20170804132455_100.jpg" alt="">
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="bar-bottom">
+                            <div class="imain">
+                                <div class="iain" id="one">
+                                    <img src="img/logo3.png" alt="" style="margin-left: 40px;">
+                                    <div class="fore"></div>
+                                    <div class="iain-com icons">
+                                        <div class="iain-comBar">
+                                            <a href="###" class="dianshi">
+                                                <img src="img/1_20190530173916_91.png" alt="">
+                                            </a>
+                                            <ul class="Tvshopping">
+                                                <li>当家主播</li>
+                                                <li>TV厨房</li>
+                                                <li>TV家具</li>
+                                                <li>视频秀</li>
+                                                <li>热销榜</li>
+                                                <li>晒宝专区</li>
+                                                <li>金牌栏目</li>
+                                                <li>节目表</li>
+                                            </ul>
+                                            <div class="hnavLeftBox">
+                                                <div>
+                                                    <span>
+                                                        <img src="img/1_20151125153442_32.jpg" alt="">
+                                                    </span>
+
+                                                </div>
+                                                <div>
+                                                    <span>
+                                                        <img src="img/1_20151125153420_62.jpg" alt="">
+                                                    </span>
+                                                </div>
+                                                <span>
+                                                    <img src="img/1_20151125153345_12.jpg" alt="">
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="hindexlef">
+                                            <div class="lef1">
+                                                <img src="img/1_20180914170013_58.jpg" alt="">
+                                            </div>
+                                            <div class="lef2">
+                                                <img src="img/1_20181101102706_65.jpg" alt="">
+                                            </div>
+                                            <div class="lef3">
+                                                <img src="img/1_20181031182322_18.jpg" alt="">
+                                            </div>
+                                            <div class="lef4">
+                                                <img src="img/1_20181101144757_44.jpg" alt="">
+                                            </div>
+                                            <div class="lef5">
+                                                <img src="img/1_20181101144123_97.jpg" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="imain" id="tow">
+                                <div class="iain">
+                                    <img src="img/logo2.png" alt="" style="margin-left: 30px;">
+                                    <div class="fore"></div>
+                                    <div class="iain-com icomone">
+                                        <div class="iain-comBar">
+                                            <a href="###" class="dianshi">
+                                                <img src="img/1_20190530173916_91.png" alt="">
+                                            </a>
+                                            <ul class="Tvshopping">
+                                                <li>今日上新</li>
+                                                <li>品牌团</li>
+                                                <li>团购排行榜</li>
+                                                <li>TV团</li>
+                                                <li>服饰箱包</li>
+                                                <li>家具家电</li>
+                                                <li>洗护美妆</li>
+                                                <li>食品保健</li>
+                                            </ul>
+                                            <div class="hnavLeftBox">
+                                                <div>
+                                                    <span>
+                                                        <img src="img/1_20151105171646_10.jpg" alt="">
+                                                    </span>
+                                                </div>
+                                                <div>
+                                                    <span>
+                                                        <img src="img/1_20151209191145_55.jpg" alt="">
+                                                    </span>
+                                                </div>
+                                                <span>
+                                                    <img src="img/1_20190629104705_49.jpg" alt="">
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="comBarItem">
+                                            <div class="comBarItemt">
+                                                <img src="img/1_20150728102507_8.png" alt="">
+                                            </div>
+                                            <div class="lunbotu">轮播</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="imain" id="there">
+                                <div class="iain">
+                                    <img src="img/quanqiugoulogo.png" alt="" style="margin-left: 44px;">
+                                    <div class="fore"></div>
+                                    <div class="iain-com icomtow">
+                                        <div class="iain-comBar">
+                                            <a href="###" class="dianshi">
+                                                <img src="img/1_20190530173916_91.png" alt="">
+                                            </a>
+                                            <ul class="Tvshopping">
+                                                <li>北美馆</li>
+                                                <li>欧洲馆</li>
+                                                <li>澳新馆</li>
+                                                <li>亚洲馆</li>
+                                                <li>直邮馆</li>
+                                                <li>奥尔滨</li>
+                                                <li>每日热卖</li>
+                                            </ul>
+                                            <div class="hnavLeftBox">
+                                                <div>
+                                                    <span>
+                                                        <img src="img/1_20180408103654_68.jpg" alt="">
+                                                    </span>
+                                                </div>
+                                                <div>
+                                                    <span>
+                                                        <img src="img/1_20171214222426_51.jpg" alt="">
+                                                    </span>
+                                                </div>
+                                                <span>
+                                                    <img src="img/1_20151207171400_94.jpg" alt="">
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="hIndexkroBannerImg">
+                                            <img src="img/1_20180126180120_100.jpg" alt="">
+                                        </div>
+                                        <div class="hIndexkroBannerItemList">
+                                            <div class="BannerListBox">
+                                                <img src="img/1_20180710140243_15.jpg" alt="">
+                                                <p>比那氏蜂胶复合漱口水</p>
+                                                <p>超大容量 清洁口腔</p>
+                                            </div>
+                                            <div class="BannerListBox">
+                                                <img src="img/1_20180321163719_17.jpg" alt="">
+                                                <p>贝德玛舒妍洁肤液</p>
+                                                <p>卸妆保湿多效合一</p>
+                                            </div>
+                                            <div class="BannerListBox">
+                                                <img src="img/1_20180321170643_90.jpg" alt="">
+                                                <p>EAORON 修护面膜</p>
+                                                <p>自然美颜 深层呵护</p>
+                                            </div>
+                                            <div class="BannerListBox">
+                                                <img src="img/1_20180126181052_98.jpg" alt="">
+                                                <p>DUIT 急救手膜</p>
+                                                <p>改善皮肤干燥情况</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="imain" id="four">
+                                <div class="iain">
+                                    <img src="img/logo5.png" alt="" style="margin-left: 47px;">
+                                    <div class="fore"></div>
+                                    <div class="iain-com icomthree">
+                                        <div class="iain-comBar">
+                                            <a href="###" class="dianshi">
+                                                <img src="img/1_20190530173916_91.png" alt="">
+                                            </a>
+                                            <ul class="Tvshopping">
+                                                <li>浪莎</li>
+                                                <li>品轩阁</li>
+                                                <li>美乐家</li>
+                                                <li>泰泓</li>
+                                                <li>利茸</li>
+                                                <li>卫欲无限</li>
+                                                <li>七彩云南</li>
+                                                <li>乐高</li>
+                                            </ul>
+                                            <div class="hnavLeftBox">
+                                                <div>
+                                                    <span>
+                                                        <img src="img/1_20170604143005_25.jpg" alt="">
+                                                    </span>
+
+                                                </div>
+                                                <div>
+                                                    <span>
+                                                        <img src="img/1_20170418155556_75.jpg" alt="">
+                                                    </span>
+                                                </div>
+                                                <span>
+                                                    <img src="img/1_20170320172243_12.jpg" alt="">
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="oshishangBanner">
+                                            <img src="img/1_20190530173721_69.jpg" alt="" class="Maxbanner">
+                                            <div class="oshishangBannerItem">
+                                                <div class="BannerListBox">
+                                                    <img src="img/1_20190530174158_83.jpg" alt="">
+                                                    <p>东方优选</p>
+                                                    <p>遇见美好</p>
+                                                </div>
+                                                <div class="BannerListBox">
+                                                    <img src="img/1_20180920111155_1.jpg" alt="">
+                                                    <p>华为P20</p>
+                                                    <p>人像摄影大师</p>
+                                                </div>
+                                                <div class="BannerListBox">
+                                                    <img src="img/1_20170321112202_96.jpg" alt="">
+                                                    <p>时令鲜果</p>
+                                                    <p>果粒橙来袭</p>
+                                                </div>
+                                                <div class="BannerListBox">
+                                                    <img src="img/1_20170526111109_5.jpg" alt="">
+                                                    <p>德国原装进口</p>
+                                                    <p>30年品质保证</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 右内容 -->
+                    <div class="right-bar">
+                        <div class="live-box">
+                            <div class="live-bone">
+                                <div class="live-host">
+                                    <div class="hostzhibo">
+                                        热销直播
+                                        <p class="bg"></p>
+                                    </div>
+                                    <p class="hostzbti">热销直播</p>
+                                </div>
+                                <div class="live-hostMain">
+                                    <img src="img/xbg_03.gif" alt="" style="padding: 4px;float: left;">
+                                    <ul class="TVgoods">
+                                        <li>
+                                            <img src="img/tvlogo.png" alt="">
+                                            <p class="outtime">00:35:38</p>
+                                        </li>
+                                        <li>谷泰&nbsp;饭店亲朋惠聚组</li>
+                                        <li>
+                                            <p class="price">￥1288</p>
+                                            <p class="jifen">积</p>
+                                            <p style="color: #ffa584;font-size:9px;margin: 10px 0 0 5px;">12.88</p>
+                                            <div class="lookzb">看直播</div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="live-btow">
+                                <img src="img/1_20190829093037_96.jpg" alt="">
+                                <img src="img/1_20161124142439_36.png" alt="" class="jian">
+                            </div>
+                        </div>
+                        <div id="rigBanner">
+                            <div class="cont">
+                                <ul id="loboimg">
+                                    <li>
+                                        <img src="img/1_20190912175006_19.jpg" alt="">
+                                    </li>
+                                    <li>
+                                        <img src="img/1_20190912174546_8.jpg" alt="">
+                                    </li>
+                                    <li>
+                                        <img src="img/1_20190912173537_68.jpg" alt="">
+                                    </li>
+                                    <li>
+                                        <img src="img/1_20191009132517_97.jpg" alt="">
+                                    </li>
+                                    <li>
+                                        <img src="img/1_20190929154959_33.jpg" alt="">
+                                    </li>
+                                    <li>
+                                        <img src="img/1_20190929145312_30.jpg" alt="">
+                                    </li>
+                                    <li>
+                                        <img src="img/1_20191009132022_72.jpg" alt="">
+                                    </li>
+                                </ul>
+                            </div>
+                            <a href="###" class="prve" style="opacity: 0;">&lt;</a>
+                            <a href="###" class="next" style="opacity: 0;">&gt;</a>
+                            <div class="yd" id="xt">
+                                <!-- <span></span> -->
+                            </div>
+                        </div>
+                        <div class="ri-barright">
+                            <div class="bannerBox">
+                                <div class="boximg">
+                                    <img src="img/1_20190912175103_67.jpg" alt="">
+                                    <div class="conm">
+                                        <p style="margin-top:15px;font-size: 16px;color: #464646;">大金大1.5P空调</p>
+                                        <span
+                                            style="margin-top:6px;display: block;font-size: 12px;color:#2c2c2c;">直流变频&nbsp;五感轻风</span>
+                                    </div>
+                                </div>
+                                <div class="boximg">
+                                    <img src="img/1_20190912175203_4.jpg" alt="">
+                                    <div class="conm">
+                                        <p style="margin-top:15px;font-size: 16px;color: #464646;">美的552升对开门冰箱</p>
+                                        <span
+                                            style="margin-top:6px;display: block;font-size: 12px;color:#2c2c2c;">风冷无霜&nbsp;低耗能保鲜</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="conten">
+                <div class="newchantop">
+                    <div class="newChannelTitle">
+                        主播推荐
+                        <span>TV购物&nbsp;热卖排行</span>
+                    </div>
+                    <div class="indexTvr">
+                        <div class="indexTvrImg">
+                            <img src="img/15307493-4L.jpg" alt="">
+                        </div>
+                        <div class="indexTvrTitle">
+                            <div class="indexTvrTitleItem"><strong>大唐王朝 “经典传奇” 蜜蜡海漂料原皮手串</strong></div>
+                            <div class="indexTvrTitleItem"><strong style="color: #ea0505;">￥3980</strong></div>
+                        </div>
+                        <div class="indexTvrtuijian">
+                            寇婷婷推荐：
+                        </div>
+                        <div class="xingbijia">
+                            <p>性价比高、款式大方，雕刻精美</p>
+                        </div>
+                    </div>
+                    <div class="indexTvrebo">
+                        <div class="Tvrebos">
+                            <div class="hCommonItem">
+                                <div class="hItemShowImg">
+                                    <img src="img/15317219-5L.jpg" alt="">
+                                </div>
+                                <div class="hItemShowTitle">劲农 五常稻花香大米特惠组</div>
+                                <div class="hItemShowMoney">
+                                    <span>￥</span>298
+                                    <del></del>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="Tvrebos">
+                            <div class="hCommonItem">
+                                <div class="hItemShowImg">
+                                    <img src="img/15323330-L.jpg" alt="">
+                                </div>
+                                <div class="hItemShowTitle">[2019金秋收获季]神象 西洋参（片）超值装（4瓶装）</div>
+                                <div class="hItemShowMoney">
+                                    <span>￥</span>598
+                                    <del></del>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="Tvrebos non">
+                            <div class="hCommonItem">
+                                <div class="hItemShowImg">
+                                    <img src="img/15322807-L.jpg" alt="">
+                                </div>
+                                <div class="hItemShowTitle">[2019金秋收获季]好当家 有机即食海参臻享升级组</div>
+                                <div class="hItemShowMoney">
+                                    <span>￥</span>2698
+                                    <del></del>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="Tvrebos ma-t">
+                            <div class="hCommonItem">
+                                <div class="hItemShowImg">
+                                    <img src="img/15313015-2L.jpg" alt="">
+                                </div>
+                                <div class=" hItemShowTitle">都江堰红心猕猴桃特惠组</div>
+                                <div class="hItemShowMoney">
+                                    <span>￥</span>238
+                                    <del></del>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="Tvrebos ma-t">
+                            <div class="hCommonItem">
+                                <div class="hItemShowImg">
+                                    <img src="img/15324629-2L.jpg" alt="">
+                                </div>
+                                <div class="hItemShowTitle">鹿王.澳普蒂姆 加绒蕾丝连衣裙2件组</div>
+                                <div class="hItemShowMoney">
+                                    <span>￥</span>218
+                                    <del></del>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="Tvrebos ma-t non">
+                            <div class="hCommonItem">
+                                <div class="hItemShowImg">
+                                    <img src="img/15303002-2L.jpg" alt="">
+                                </div>
+                                <div class="hItemShowTitle">万事胜意 微笑五层翻盖收纳柜</div>
+                                <div class="hItemShowMoney">
+                                    <span>￥</span>299
+                                    <del></del>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="newChannelTitletow">
+                    <div class="newchan">
+                        团购
+                        <span>超高性价比</span>
+                    </div>
+                    <div class="indexTvreboLeft">
+                        <a href="####">
+                            <img src="img/1_20190926165251_79.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="indexTvreboRight">
+                        <div class="Tvrebos">
+                            <div class="hCommonItem">
+                                <div class="hItemShowImg">
+                                    <img src="img/15317219-5L.jpg" alt="">
+                                </div>
+                                <div class="hItemShowTitle">劲农 五常稻花香大米特惠组</div>
+                                <div class="hItemShowMoney">
+                                    <span style="margin-left: 0;">￥</span>298
+                                    <del></del>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="Tvrebos">
+                            <div class="hCommonItem">
+                                <div class="hItemShowImg">
+                                    <img src="img/15317219-5L.jpg" alt="">
+                                </div>
+                                <div class="hItemShowTitle">劲农 五常稻花香大米特惠组</div>
+                                <div class="hItemShowMoney">
+                                    <span style="margin-left: 0;">￥</span>298
+                                    <del></del>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="Tvrebos" style="margin-right: 0;">
+                            <div class="hCommonItem">
+                                <div class="hItemShowImg">
+                                    <img src="img/15317219-5L.jpg" alt="">
+                                </div>
+                                <div class="hItemShowTitle">劲农 五常稻花香大米特惠组</div>
+                                <div class="hItemShowMoney">
+                                    <span style="margin-left: 0;">￥</span>298
+                                    <del></del>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="newChannelTitletow">
+                    <div class="newchan">
+                        全球购
+                        <span>产地直采&nbsp;正品保证</span>
+                    </div>
+                    <div class="indexTvreboLeft">
+                        <a href="####">
+                            <img src="img/2_20180813094948_86.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="indexTvreboRight">
+                        <div class="Tvrebos">
+                            <div class="hCommonItem">
+                                <div class="hItemShowImg">
+                                    <img src="img/15317219-5L.jpg" alt="">
+                                </div>
+                                <div class="hItemShowTitle">劲农 五常稻花香大米特惠组</div>
+                                <div class="hItemShowMoney">
+                                    <span style="margin-left: 0;">￥</span>298
+                                    <del></del>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="Tvrebos">
+                            <div class="hCommonItem">
+                                <div class="hItemShowImg">
+                                    <img src="img/15317219-5L.jpg" alt="">
+                                </div>
+                                <div class="hItemShowTitle">劲农 五常稻花香大米特惠组</div>
+                                <div class="hItemShowMoney">
+                                    <span style="margin-left: 0;">￥</span>298
+                                    <del></del>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="Tvrebos" style="margin-right: 0;">
+                            <div class="hCommonItem">
+                                <div class="hItemShowImg">
+                                    <img src="img/15317219-5L.jpg" alt="">
+                                </div>
+                                <div class="hItemShowTitle">劲农 五常稻花香大米特惠组</div>
+                                <div class="hItemShowMoney">
+                                    <span style="margin-left: 0;">￥</span>298
+                                    <del></del>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 自定义广告位 -->
+                <div class="hindexBanner">
+                    <img src="img/1_20190929161921_14.jpg" alt="">
+                </div>
+                <!-- 楼层模板1 -->
+                <div class="ProtListBox">
+                    <div class="ProListBoxtitle" id="shipin">
+                        食品饮料
+                        <span>省心又美味</span>
+                    </div>
+                    <div class="ProtListBoxLeft">
+                        <div class="ProtListBoxLeftItemimg">
+                            <img src="img/1_20190927105347_63.jpg" alt="">
+                        </div>
+                        <div class="ProtListBoxLeftItemItem">
+                            <img src="img/shipin_03.gif" alt="">
+                        </div>
+                    </div>
+                    <div class="ProtListBoxRight">
+                        <div class="tItemList" style="margin-left: 0">
+                            <div class="hCommonItem">
+                                <div class="hItemShowImg">
+                                    <img src="img/15151432-3L.jpg" alt="">
+                                </div>
+                                <a href="###">光明米业 2018新米香而糯优质大米24斤加赠香而糯优质大米</a>
+                                <div class="hItemShowMoney">
+                                    <span>￥</span>168
+                                    <del>￥238</del>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tItemList">
+                            <div class="hCommonItem">
+                                <div class="hItemShowImg">
+                                    <img src="img/15139637L.jpg" alt="">
+                                </div>
+                                <a href="###">亚洲渔港 深海鳕鱼排310g* (5+2) 盒家庭装组合
+                                </a>
+                                <div class="hItemShowMoney">
+                                    <span>￥</span>109
+                                    <del>￥199</del>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tItemList">
+                            <div class="hCommonItem">
+                                <div class="hItemShowImg">
+                                    <img src="img/15261826L.jpg" alt="">
+                                </div>
+                                <a href="###">亚洲渔港 深海鳕鱼排310g* (5+2) 盒家庭装组合</a>
+                                <div class="hItemShowMoney">
+                                    <span>￥</span>268
+                                    <del></del>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tItemList">
+                            <div class="hCommonItem">
+                                <div class="hItemShowImg">
+                                    <img src="img/15279352L.jpg" alt="">
+                                </div>
+                                <a href="###">就这样甜蜜]纽仕兰 新西兰原装进口4.0钻石版全脂牛奶250ml 24*</a>
+                                <div class="hItemShowMoney">
+                                    <span>￥</span>198
+                                    <del>￥619.2</del>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tItemList" style="margin-left: 0">
+                            <div class="hCommonItem">
+                                <div class="hItemShowImg">
+                                    <img src="img/699946-4L.jpg" alt="">
+                                </div>
+                                <a href="###">52度五粮液浓香型白酒6瓶装（原厂原箱）</a>
+                                <div class="hItemShowMoney">
+                                    <span>￥</span>6180
+                                    <del></del>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tItemList">
+                            <div class="hCommonItem">
+                                <div class="hItemShowImg">
+                                    <img src="img/15157403-6L.jpg" alt="">
+                                </div>
+                                <a href="###">【电视团购】却老斋 破壁灵芝孢子粉优惠装0.99g/袋*（1</a>
+                                <div class="hItemShowMoney">
+                                    <span>￥</span>1099
+                                    <del>￥1460</del>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tItemList">
+                            <div class="hCommonItem">
+                                <div class="hItemShowImg">
+                                    <img src="img/15110183-4L.jpg" alt="">
+                                </div>
+                                <a href="###">沪品牌专场]【电视团购】昂立 多邦经典特惠(三盒装)加赠装</a>
+                                <div class="hItemShowMoney">
+                                    <span>￥</span>739
+                                    <del>￥928</del>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tItemList">
+                            <div class="hCommonItem">
+                                <div class="hItemShowImg">
+                                    <img src="img/15312327-10L.jpg" alt="">
+                                </div>
+                                <a href="###">棒棰岛 大连淡干辽参70克21-30头</a>
+                                <div class="hItemShowMoney">
+                                    <span>￥</span>1266
+                                    <del></del>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="ProtListBox">
+                    <div class="ProListBoxtitle" id="jiaju">
+                        家居厨房
+                        <span>变身大厨的好帮手</span>
+                    </div>
+                    <div class="ProtListBoxLeft">
+                        <div class="jiajuhcu">
+                            <img src="img/jiaju_03.gif" alt="">
+                        </div>
+                    </div>
+                    <div class="ProtListBoxRight">
+                        <div class="tItemList" style="margin-left: 0">
+                            <div class="hCommonItem">
+                                <div class="hItemShowImg">
+                                    <img src="img/15183967L.jpg" alt="">
+                                </div>
+                                <a href="###">碧然德(BRITA) Maxtra+ 标准版滤芯 6枚装（新</a>
+                                <div class="hItemShowMoney">
+                                    <span>￥</span>239
+                                    <del></del>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tItemList">
+                            <div class="hCommonItem">
+                                <div class="hItemShowImg">
+                                    <img src="img/361861-6L.jpg" alt="">
+                                </div>
+                                <a href="###"><span style="color:#00BFFF">【电视团购】</span>双立人TWIN
+                                    Point鸿运当头刀具促销装</a>
+                                <div class="hItemShowMoney">
+                                    <span>￥</span>799
+                                    <del></del>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tItemList">
+                            <div class="hCommonItem">
+                                <div class="hItemShowImg">
+                                    <img src="img/15283811-6L.jpg" alt="">
+                                </div>
+                                <a href="###"> <span style="color:#00BFFF">[爆款]</span> 摩飞
+                                    MR9600便携充电式榨汁机家用小型电动迷你料理水果汁</a>
+                                <div class="hItemShowMoney">
+                                    <span>￥</span>194
+                                    <del></del>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tItemList">
+                            <div class="hCommonItem">
+                                <div class="hItemShowImg">
+                                    <img src="img/15310456-L.jpg" alt="">
+                                </div>
+                                <a href="###"> <span style="color: #00BFFF">[限时特惠]</span> 米技(MIJI)
+                                    空气炸锅MFEO-812多功能家用无油大容</a>
+                                <div class="hItemShowMoney">
+                                    <span>￥</span>399
+                                    <del>￥619.2</del>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tItemList" style="margin-left: 0">
+                            <div class="hCommonItem">
+                                <div class="hItemShowImg">
+                                    <img src="img/15144510-3L.jpg" alt="">
+                                </div>
+                                <a href="###">戴森(Dyson) 暖风器AM09</a>
+                                <div class="hItemShowMoney">
+                                    <span>￥</span>3650
+                                    <del>￥4190</del>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tItemList">
+                            <div class="hCommonItem">
+                                <div class="hItemShowImg">
+                                    <img src="img/15228561-3L.jpg" alt="">
+                                </div>
+                                <a href="###"> <span style="color: #00BFFF">[爆款]</span> 永怡御风
+                                    维嘉丝折叠隐形风扇灯带摇控客厅吊扇灯44-DC90</a>
+                                <div class="hItemShowMoney">
+                                    <span>￥</span>1149
+                                    <del>￥3688</del>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tItemList">
+                            <div class="hCommonItem">
+                                <div class="hItemShowImg">
+                                    <img src="img/15261186L.jpg" alt="">
+                                </div>
+                                <a href="###">富培美 水精灵有氧酵素茉莉香洗衣粉多功能清洁洗剂8+8+2超</a>
+                                <div class="hItemShowMoney">
+                                    <span>￥</span>139
+                                    <del></del>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tItemList">
+                            <div class="hCommonItem">
+                                <div class="hItemShowImg">
+                                    <img src="img/15076446L.jpg" alt="">
+                                </div>
+                                <a href="###">奈士迪 95%贡缎白鹅绒羽绒被 1600g A214-D（</a>
+                                <div class="hItemShowMoney">
+                                    <span>￥</span>2498
+                                    <del></del>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="ProtListBox">
+                    <div class="ProListBoxtitle" id="jiadian">
+                        3C家电
+                        <span>强劲净化 简单呼吸</span>
+                    </div>
+                    <div class="ProtListBoxLeft">
+                        <div class="jiadian">
+                            <img src="img/jiadain_03.gif" alt="">
+                        </div>
+                    </div>
+                    <div class="ProtListBoxRight">
+                        <div class="tItemList" style="margin-left: 0">
+                            <div class="hCommonItem">
+                                <div class="hItemShowImg">
+                                    <img src="img/15302627-L.jpg" alt="">
+                                </div>
+                                <a href="###">(限时挂架安装免费）飞利浦(PHILIPS) 32PHF50</a>
+                                <div class="hItemShowMoney">
+                                    <span>￥</span>1099
+                                    <del>￥2299</del>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tItemList">
+                            <div class="hCommonItem">
+                                <div class="hItemShowImg">
+                                    <img src="img/15315690-L.jpg" alt="">
+                                </div>
+                                <a href="###">华为(HUAWEI) 荣耀9X 麒麟810旗舰级芯片 升降式</a>
+                                <div class="hItemShowMoney">
+                                    <span>￥</span>1899
+                                    <del></del>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tItemList">
+                            <div class="hCommonItem">
+                                <div class="hItemShowImg">
+                                    <img src="img/15290327-L.jpg" alt="">
+                                </div>
+                                <a href="###">苹果(APPLE) AirPods ( 苹果蓝牙无线耳机,M</a>
+                                <div class="hItemShowMoney">
+                                    <span>￥</span>1599
+                                    <del></del>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tItemList">
+                            <div class="hCommonItem">
+                                <div class="hItemShowImg">
+                                    <img src="img/15174756-L.jpg" alt="">
+                                </div>
+                                <a href="###">戴森(Dyson) 手持式吸尘器SV10 V8Fluffy</a>
+                                <div class="hItemShowMoney">
+                                    <span>￥</span>2690
+                                    <del>￥4900</del>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tItemList" style="margin-left: 0">
+                            <div class="hCommonItem">
+                                <div class="hItemShowImg">
+                                    <img src="img/15285482-5L.jpg" alt="">
+                                </div>
+                                <a href="###"><span style="color: #00BFFF">[爆款]</span>格力(GREE) 俊越 大1.5匹变频 冷暖挂机空调 KF</a>
+                                <div class="hItemShowMoney">
+                                    <span>￥</span>2699
+                                    <del></del>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tItemList">
+                            <div class="hCommonItem">
+                                <div class="hItemShowImg">
+                                    <img src="img/15188655-L.jpg" alt="">
+                                </div>
+                                <a href="###"> <span style="color: #00BFFF">[焕新爱家]</span> 能率(NORITZ)
+                                    13升恒温热水器GQ-1380FEX(</a>
+                                <div class="hItemShowMoney">
+                                    <span>￥</span>2198
+                                    <del>￥3198</del>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tItemList">
+                            <div class="hCommonItem">
+                                <div class="hItemShowImg">
+                                    <img src="img/15229344-7L.jpg" alt="">
+                                </div>
+                                <a href="###"> <span style="color: #00BFFF">[爆款]</span> 西西门子(SIEMENS)
+                                    610L变频静音风冷无霜大容量对开</a>
+                                <div class="hItemShowMoney">
+                                    <span>￥</span>5999
+                                    <del></del>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tItemList">
+                            <div class="hCommonItem">
+                                <div class="hItemShowImg">
+                                    <img src="img/15227976-6L.jpg" alt="">
+                                </div>
+                                <a href="###">惠而浦(Whirlpool) 7公斤WB70803G全自动波</a>
+                                <div class="hItemShowMoney">
+                                    <span>￥</span>1398
+                                    <del></del>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="ProtListBox">
+                    <div class="ProListBoxtitle" id="fushi">
+                        时尚服饰
+                        <span>瑞士CURAPROX牙刷</span>
+                    </div>
+                    <div class="ProtListBoxLeft">
+                        <div class="fushi" style="cursor: pointer;">
+                            <img src="img/fushi_03.gif" alt="">
+                        </div>
+                    </div>
+                    <div class="ProtListBoxRight">
+                        <div class="tItemList" style="margin-left: 0">
+                            <div class="hCommonItem">
+                                <div class="hItemShowImg">
+                                    <img src="img/15312136-4L.jpg" alt="">
+                                </div>
+                                <a href="###">母羊 新款牛皮豆豆女鞋-912</a>
+                                <div class="hItemShowMoney">
+                                    <span>￥</span>368
+                                    <del>￥588</del>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tItemList">
+                            <div class="hCommonItem">
+                                <div class="hItemShowImg">
+                                    <img src="img/15296573-5L.jpg" alt="">
+                                </div>
+                                <a href="###">途腾(TUTENG) 真皮透气女单8817</a>
+                                <div class="hItemShowMoney">
+                                    <span>￥</span>138
+                                    <del>￥598</del>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tItemList">
+                            <div class="hCommonItem">
+                                <div class="hItemShowImg">
+                                    <img src="img/640278-3L.jpg" alt="">
+                                </div>
+                                <a href="###">帝高女式圆领印花羊绒衫</a>
+                                <div class="hItemShowMoney">
+                                    <span>￥</span>1158
+                                    <del>￥1980</del>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tItemList">
+                            <div class="hCommonItem">
+                                <div class="hItemShowImg">
+                                    <img src="img/15229362-9L.jpg" alt="">
+                                </div>
+                                <a href="###">尚街 真丝水袖连衣裙(三色可选,SJ18111002)</a>
+                                <div class="hItemShowMoney">
+                                    <span>￥</span>799
+                                    <del></del>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tItemList" style="margin-left: 0">
+                            <div class="hCommonItem">
+                                <div class="hItemShowImg">
+                                    <img src="img/15285983-L.jpg" alt="">
+                                </div>
+                                <a href="###">原趣 女式V领美丽诺羊毛衫(限量特惠)</a>
+                                <div class="hItemShowMoney">
+                                    <span>￥</span>228
+                                    <del></del>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tItemList">
+                            <div class="hCommonItem">
+                                <div class="hItemShowImg">
+                                    <img src="img/15246583-7L.jpg" alt="">
+                                </div>
+                                <a href="###">茜韵婡 长袖棉质休闲印花开衫上衣XCWW1624</a>
+                                <div class="hItemShowMoney">
+                                    <span>￥</span>428
+                                    <del></del>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tItemList">
+                            <div class="hCommonItem">
+                                <div class="hItemShowImg">
+                                    <img src="img/15307027-L.jpg" alt="">
+                                </div>
+                                <a href="###"> <span style="color:#00BFFF">[限时特惠]</span> 【临保商品】森田保湿精华水嫩面膜10片*3盒（共30</a>
+                                <div class="hItemShowMoney">
+                                    <span>￥</span>387
+                                    <del></del>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tItemList">
+                            <div class="hCommonItem">
+                                <div class="hItemShowImg">
+                                    <img src="img/15318128-L.jpg" alt="">
+                                </div>
+                                <a href="###">【电视团购】丽彩娜洗头式花香型染发剂6盒装</a>
+                                <div class="hItemShowMoney">
+                                    <span>￥</span>308
+                                    <del></del>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 主题 -->
+                <div class="storeThemeBox">
+                    <div class="ProtListBoxTitle">
+                        商城优选
+                        <div class="hSysButton">
+                            <a href="###">更多推荐</a>
+                        </div>
+                    </div>
+                    <div class="storeWrap">
+                        <div class="storeThemeItem" style="margin-right: 10px;">
+                            <div class="storeTheme">
+                                <div class="stbLogoImg">
+                                    <img src="img/4_20190722161054_15.jpg" alt="">
+                                    <div class="stbLogoPrdTtl">
+                                        谷怡斋官方旗舰店
+                                    </div>
+                                    <div class="stbLogoBtn">
+                                        寻找原产地谷物
+                                    </div>
+                                </div>
+                                <div class="stbLogoPrd">
+                                    <div class="stbLogoPrdBtn">
+                                        <img src="img/15241217L.jpg" alt="">
+                                    </div>
+                                    <div class="stbLogoPrdInfo">
+                                        <div class="hItemtitle">
+                                            <a href="###">谷怡斋 2018当季新米 生态小町大米5kg 东北大</a>
+                                        </div>
+                                        <div class="stbLogoPrdInfoLink">￥59.8</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="storeThemeList">
+                                <div class="stbListItem">
+                                    <img src="img/15241794L.jpg" alt="">
+                                    <div class="stbListItemTxt">
+                                        <div class="hItemtitle">
+                                            <a href="###">谷怡斋 2018当季新米 五常有机稻香贡米5kg</a>
+                                        </div>
+                                        <div class="stbListItemPrice">
+                                            <span>￥</span>
+                                            128
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="stbListItem">
+                                    <img src="img/15241815L.jpg" alt="">
+                                    <div class="stbListItemTxt">
+                                        <div class="hItemtitle">
+                                            <a href="###">[商城]谷怡斋 有机宝宝粥米500g*2袋 儿童辅</a>
+                                        </div>
+                                        <div class="stbListItemPrice">
+                                            <span>￥</span>
+                                            29.8
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="stbListItem">
+                                    <img src="img/15241811L.jpg" alt="">
+                                    <div class="stbListItemTxt">
+                                        <div class="hItemtitle">
+                                            <a href="###">谷怡斋 五常纯香米1kg*2袋 稻花香 东北大米</a>
+                                        </div>
+                                        <div class="stbListItemPrice">
+                                            <span>￥</span>
+                                            39.8
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="storeThemeItem">
+                            <div class="storeTheme">
+                                <div class="stbLogoImg">
+                                    <img src="img/1_20161020102530_29.jpg" alt="">
+                                    <div class="stbLogoPrdTtl">
+                                        浪莎官方旗舰店
+                                    </div>
+                                    <div class="stbLogoBtn">
+                                        保暖内衣50元起
+                                    </div>
+                                </div>
+                                <div class="stbLogoPrd">
+                                    <div class="stbLogoPrdBtn">
+                                        <img src="img/15138990L.jpg" alt="">
+                                    </div>
+                                    <div class="stbLogoPrdInfo">
+                                        <div class="hItemtitle">
+                                            <a href="###">[商城]浪莎 特大宽体双加裆丝袜10双</a>
+                                        </div>
+                                        <div class="stbLogoPrdInfoLink">￥159</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="storeThemeList">
+                                <div class="stbListItem">
+                                    <img src="img/15185670L.jpg" alt="">
+                                    <div class="stbListItemTxt">
+                                        <div class="hItemtitle">
+                                            <a href="###">[商城]浪莎 男士短丝袜夏季超薄透气中筒袜子</a>
+                                        </div>
+                                        <div class="stbListItemPrice">
+                                            <span>￥</span>
+                                            79
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="stbListItem">
+                                    <img src="img/15227046L.jpg" alt="">
+                                    <div class="stbListItemTxt">
+                                        <div class="hItemtitle">
+                                            <a href="###">[商城]浪莎 女士弹力棉性感蕾丝网纱高腰收腹</a>
+                                        </div>
+                                        <div class="stbListItemPrice">
+                                            <span>￥</span>
+                                            99
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="stbListItem">
+                                    <img src="img/15139017L.jpg" alt="">
+                                    <div class="stbListItemTxt">
+                                        <div class="hItemtitle">
+                                            <a href="###">[商城]浪莎 高腰女士棉内裤4条礼盒装</a>
+                                        </div>
+                                        <div class="stbListItemPrice">
+                                            <span>￥</span>
+                                            45
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="storeThemeItem" style="margin-right: 10px;">
+                            <div class="storeTheme">
+                                <div class="stbLogoImg">
+                                    <img src="img/2_20190722153911_39.jpg" alt="">
+                                    <div class="stbLogoPrdTtl">
+                                        MUMUSO
+                                    </div>
+                                    <div class="stbLogoBtn">
+                                        东方优选遇见美好
+                                    </div>
+                                </div>
+                                <div class="stbLogoPrd">
+                                    <div class="stbLogoPrdBtn">
+                                        <img src="img/15322049-3L.jpg" alt="">
+                                    </div>
+                                    <div class="stbLogoPrdInfo">
+                                        <div class="hItemtitle">
+                                            <a href="###">[商城]MUMUSO 芦荟胶</a>
+                                        </div>
+                                        <div class="stbLogoPrdInfoLink">￥10</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="storeThemeList">
+                                <div class="stbListItem">
+                                    <img src="img/15315028-2L.jpg" alt="">
+                                    <div class="stbListItemTxt">
+                                        <div class="hItemtitle">
+                                            <a href="###">[商城]MUMUSO 弯柄按摩梳-绿色</a>
+                                        </div>
+                                        <div class="stbListItemPrice">
+                                            <span>￥</span>
+                                            19.9
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="stbListItem">
+                                    <img src="img/15313495-8L.jpg" alt="">
+                                    <div class="stbListItemTxt">
+                                        <div class="hItemtitle">
+                                            <a href="###">[商城]MUMUSO 极简超声波香薰灯</a>
+                                        </div>
+                                        <div class="stbListItemPrice">
+                                            <span>￥</span>
+                                            129
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="stbListItem">
+                                    <img src="img/15313789-8L.jpg" alt="">
+                                    <div class="stbListItemTxt">
+                                        <div class="hItemtitle">
+                                            <a href="###">[商城]MUMUSO 3D回旋洁力多功能充电电动</a>
+                                        </div>
+                                        <div class="stbListItemPrice">
+                                            <span>￥</span>
+                                            99
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="storeThemeItem">
+                            <div class="storeTheme">
+                                <div class="stbLogoImg">
+                                    <img src="img/3_20190617103014_8.jpg" alt="">
+                                    <div class="stbLogoPrdTtl">
+                                        博浮数码专营店
+                                    </div>
+                                    <div class="stbLogoBtn">
+                                        智能引领生活
+                                    </div>
+                                </div>
+                                <div class="stbLogoPrd">
+                                    <div class="stbLogoPrdBtn">
+                                        <img src="img/15298756-L.jpg" alt="">
+                                    </div>
+                                    <div class="stbLogoPrdInfo">
+                                        <div class="hItemtitle">
+                                            <a href="###">[商城]华为(HUAWEI) P30 Pro 8G</a>
+                                        </div>
+                                        <div class="stbLogoPrdInfoLink">￥5,488</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="storeThemeList">
+                                <div class="stbListItem">
+                                    <img src="img/15267859L.jpg" alt="">
+                                    <div class="stbListItemTxt">
+                                        <div class="hItemtitle">
+                                            <a href="###">[商城]华为(HUAWEI) Mate20(6GB+</a>
+                                        </div>
+                                        <div class="stbListItemPrice">
+                                            <span>￥</span>
+                                            3,599
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="stbListItem">
+                                    <img src="img/15284409-L.jpg" alt="">
+                                    <div class="stbListItemTxt">
+                                        <div class="hItemtitle">
+                                            <a href="###">[商城]华为(HUAWEI) Mate20Pro(U</a>
+                                        </div>
+                                        <div class="stbListItemPrice">
+                                            <span>￥</span>
+                                            5,899
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="stbListItem">
+                                    <img src="img/15298388-L.jpg" alt="">
+                                    <div class="stbListItemTxt">
+                                        <div class="hItemtitle">
+                                            <a href="###">[商城]华为(HUAWEI) 畅享 9e 6.09英</a>
+                                        </div>
+                                        <div class="stbListItemPrice">
+                                            <span>￥</span>
+                                            1,068
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="ProtListBox" id="clearmar">
+                    <div class="ProListBoxtitle">
+                        猜你喜欢
+                        <div class="hSysButton">
+                            <a href="###">换一组?</a>
+                        </div>
+                    </div>
+                    <div class="hyouwilllike">
+                        <div class="hyouwilllikeItems">
+                            <div class="hCommonItem">
+                                <div class="hItemShowImg">
+                                    <img src="img/15237834-2L.jpg" alt="">
+                                </div>
+                                <a href="###">五味常佳 五常大米特惠装</a>
+                                <div class="hItemShowMoney">
+                                    <span>￥</span>268
+                                    <del></del>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hyouwilllikeItems">
+                            <div class="hCommonItem">
+                                <div class="hItemShowImg">
+                                    <img src="img/15241946L.jpg" alt="">
+                                </div>
+                                <a href="###">蜜滋兰 新西兰原装进口麦卢卡花蜂蜜(UMF15+)250gx</a>
+                                <div class="hItemShowMoney">
+                                    <span>￥</span>398
+                                    <del>￥418</del>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hyouwilllikeItems">
+                            <div class="hCommonItem">
+                                <div class="hItemShowImg">
+                                    <img src="img/15216689L.jpg" alt="">
+                                </div>
+                                <a href="###">[就这样甜蜜]新生命 日本原装进口乳酸菌风味饮料健康组(半年特惠</a>
+                                <div class="hItemShowMoney">
+                                    <span>￥</span>696
+                                    <del></del>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hyouwilllikeItems">
+                            <div class="hCommonItem">
+                                <div class="hItemShowImg">
+                                    <img src="img/15234983-L.jpg" alt="">
+                                </div>
+                                <a href="###">博世（BOSCH）306升三门冰箱风冷无霜冰箱KGH32S2</a>
+                                <div class="hItemShowMoney">
+                                    <span>￥</span>6999
+                                    <del></del>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hyouwilllikeItems">
+                            <div class="hCommonItem">
+                                <div class="hItemShowImg">
+                                    <img src="img/15170012-4L.jpg" alt="">
+                                </div>
+                                <a href="###">富士通(Fujitsu) 将军正1.5匹全直流变频 NSA3</a>
+                                <div class="hItemShowMoney">
+                                    <span>￥</span>3099
+                                    <del></del>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 底部会员 -->
+                <div class="huiyuan">
+                    <div class="huiyuanConentShow">
+                        <div class="huiyuanBanner">
+                            <img src="img/1_20190916110934_2.jpg" alt="">
+                        </div>
+                        <div class="huiyuanIconList">
+                            <div class="IconList">
+                                <div class="huiyuantitle">会员特权</div>
+                                <div class="huiyuanList">
+                                    <img src="img/1_20150731180900_24.png" alt="">
+                                    <a href="###">签到</a>
+                                </div>
+                                <div class="huiyuanList">
+                                    <img src="img/1_20150731182429_22.png" alt="">
+                                    <a href="###">福利派</a>
+                                </div>
+                                <div class="huiyuanList">
+                                    <img src="img/1_20150731182553_63.png" alt="">
+                                    <a href="###">会员特价</a>
+                                </div>
+                                <div class="huiyuanList">
+                                    <img src="img/1_20150731182622_93.png" alt="">
+                                    <a href="###">寿星专区</a>
+                                </div>
+                                <div class="huiyuanList">
+                                    <img src="img/1_20150731182658_58.png" alt="">
+                                    <a href="###">欧点乐园</a>
+                                </div>
+                                <div class="huiyuanList">
+                                    <img src="img/1_20150731182724_9.png" alt="">
+                                    <a href="###">更多权益</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="huiyuanConentShowNav">
+                        <div class="ShowNavtabBar">
+                            <div class="ShowNavtabBarButtonn hfroce">会员特价
+                                <div class="yingzi" style="display: block">
+                                    <img src="img/yinying.png" alt="">
+                                </div>
+                            </div>
+                            <div class="ShowNavtabBarButtonn">福利派
+                                <div class="yingzi">
+                                    <img src="img/yinying.png" alt="">
+                                </div>
+                            </div>
+                            <div class="ShowNavtabBarButtonn">欧点乐园
+                                <div class="yingzi">
+                                    <img src="img/yinying.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="NavtabShowContent">
+                            <div class="NavtabShowContentList" style="display: block">
+                                <div class="NavtabShowContentItem">
+                                    <div class="hCommonItem">
+                                        <div class="hItemShowImg">
+                                            <img src="img/15183945L.jpg" alt="">
+                                        </div>
+                                        <div class="hItemShowTitle">
+                                            【会员专享】WOLL 德国制造蓝宝石炒锅特惠装
+                                        </div>
+                                        <div class="hItemShowDuihuanDel">
+                                            销售价
+                                            <span>￥
+                                                <del>1588</del>
+                                            </span>
+                                        </div>
+                                        <div class="hItemShowDuihuan">
+                                            会员价
+                                            <span>￥1270</span>
+                                            元起
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="NavtabShowContentItem">
+                                    <div class="hCommonItem">
+                                        <div class="hItemShowImg">
+                                            <img src="img/15197292L.jpg" alt="">
+                                        </div>
+                                        <div class="hItemShowTitle">
+                                            小熊(Bear) YSH-B18T1养生壶(加厚玻璃，分体设
+                                        </div>
+                                        <div class="hItemShowDuihuanDel">
+                                            销售价
+                                            <span>￥
+                                                <del>259</del>
+                                            </span>
+                                        </div>
+                                        <div class="hItemShowDuihuan">
+                                            会员价
+                                            <span>￥207</span>
+                                            元起
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="NavtabShowContentItem">
+                                    <div class="hCommonItem">
+                                        <div class="hItemShowImg">
+                                            <img src="img/15197290L.jpg" alt="">
+                                        </div>
+                                        <div class="hItemShowTitle">
+                                            格兰仕(Galanz) 智能微波炉光波炉 全镜面时尚面板
+                                        </div>
+                                        <div class="hItemShowDuihuanDel">
+                                            销售价
+                                            <span>￥
+                                                <del>659</del>
+                                            </span>
+                                        </div>
+                                        <div class="hItemShowDuihuan">
+                                            会员价
+                                            <span>￥527</span>
+                                            元起
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="NavtabShowContentItem" style="margin-right: 0">
+                                    <div class="hCommonItem">
+                                        <div class="hItemShowImg">
+                                            <img src="img/15198687-L.jpg" alt="">
+                                        </div>
+                                        <div class="hItemShowTitle">
+                                            北极绒 女士汉麻抗菌纯色棉质中腰内裤 8条装（真
+                                        </div>
+                                        <div class="hItemShowDuihuanDel">
+                                            销售价
+                                            <span>￥
+                                                <del>138</del>
+                                            </span>
+                                        </div>
+                                        <div class="hItemShowDuihuan">
+                                            会员价
+                                            <span>￥110</span>
+                                            元起
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="NavtabShowContentList">
+
+                                <div class="tabShowContentItem2">
+                                    <div class="hCommonItemTipR">
+                                        <div class="hCommonItemTipBm">
+                                            <div class="hindexCommodityTipTitle">
+                                                <span>122</span>
+                                                人报名
+                                            </div>
+                                            <div class="hindexCommodityTipReduce">仅限10份</div>
+                                        </div>
+                                    </div>
+                                    <div class="hCommonItem">
+                                        <div class="hItemShowImg">
+                                            <img src="img/1_20190926112514_26.jpg" alt="">
+                                        </div>
+                                        <div class="hItemShowTitle">丹丹李强惠生活</div>
+                                        <div class="hCommonItemPosreal">
+                                            <div class="hItemShowDuihuanDel">
+                                                销售价
+                                                <span>￥0</span>
+                                            </div>
+                                            <div class="hItemShowDuihuan">
+                                                所需欧点
+                                                <span>10</span>
+                                                点
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tabShowContentItem2" style="margin-right: 0">
+                                    <div class="hCommonItemTipR">
+                                        <div class="hCommonItemTipBm">
+                                            <div class="hindexCommodityTipTitle">
+                                                <span>283</span>
+                                                人报名
+                                            </div>
+                                            <div class="hindexCommodityTipReduce">仅限2份</div>
+                                        </div>
+                                    </div>
+                                    <div class="hCommonItem">
+                                        <div class="hItemShowImg">
+                                            <img src="img/1_20170824162110_98.jpg" alt="">
+                                        </div>
+                                        <div class="hItemShowTitle">Simelo生活美学深炖锅</div>
+                                        <div class="hCommonItemPosreal">
+                                            <div class="hItemShowDuihuanDel">
+                                                销售价
+                                                <span>￥169</span>
+                                            </div>
+                                            <div class="hItemShowDuihuan">
+                                                所需欧点
+                                                <span>10</span>
+                                                点
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="NavtabShowContentList">
+                                <div class="NavtabShowContentItem">
+                                    <div class="hCommonItem">
+                                        <div class="hItemShowImg">
+                                            <img src="img/1_20170930145820_71.jpg" alt="">
+                                        </div>
+                                        <div class="hItemShowTitle">
+                                            单件满99元减5元（有效期至12月31日）
+                                        </div>
+                                        <div class="hItemShowDuihuan">
+                                            兑换欧点
+                                            <span>300</span>
+                                            欧点
+                                        </div>
+                                        <div class="hItemShowShengyu">
+                                            剩余19945件
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="NavtabShowContentItem">
+                                    <div class="hCommonItem">
+                                        <div class="hItemShowImg">
+                                            <img src="img/1_20180323174612_31.jpg" alt="">
+                                        </div>
+                                        <div class="hItemShowTitle">
+                                            单件满199元减20元（有效期至12月31日）
+                                        </div>
+                                        <div class="hItemShowDuihuan">
+                                            兑换欧点
+                                            <span>800</span>
+                                            欧点
+                                        </div>
+                                        <div class="hItemShowShengyu">
+                                            剩余19505件
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="NavtabShowContentItem">
+                                    <div class="hCommonItem">
+                                        <div class="hItemShowImg">
+                                            <img src="img/1_20170930150102_26.jpg" alt="">
+                                        </div>
+                                        <div class="hItemShowTitle">
+                                            单件满299元减30元（有效期至12月31日）
+                                        </div>
+                                        <div class="hItemShowDuihuan">
+                                            兑换欧点
+                                            <span>1000</span>
+                                            欧点
+                                        </div>
+                                        <div class="hItemShowShengyu">
+                                            剩余19891件
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="NavtabShowContentItem" style="margin-right: 0">
+                                    <div class="hCommonItem">
+                                        <div class="hItemShowImg">
+                                            <img src="img/1_20171003153400_74.jpg" alt="">
+                                        </div>
+                                        <div class="hItemShowTitle">
+                                            单件满499元减50元（有效期至12月31日）
+                                        </div>
+                                        <div class="hItemShowDuihuan">
+                                            兑换欧点
+                                            <span>1500</span>
+                                            欧点
+                                        </div>
+                                        <div class="hItemShowShengyu">
+                                            剩余19914件
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 底部 -->
+            <div class="footerConent">
+                <div class="conten">
+                    <div class="t-footer">
+                        <div class="footermenu">
+                            <div class="fo-list">
+                                <h4 class="title-1"></h4>
+                                <ul>
+                                    <li class="title">订购指南</li>
+                                    <li>会员注册</li>
+                                    <li>订购方式</li>
+                                    <li>交换/退货</li>
+                                    <li>发票指南</li>
+                                </ul>
+                            </div>
+                            <div class="fo-list">
+                                <h4 class="title-2"></h4>
+                                <ul>
+                                    <li class="title">支付配送</li>
+                                    <li>支付方式</li>
+                                    <li>配送时间</li>
+                                    <li>配送范围</li>
+                                    <li>免费配送</li>
+                                    <li>有关验货</li>
+                                </ul>
+                            </div>
+                            <div class="fo-list">
+                                <h4 class="title-3"></h4>
+                                <ul>
+                                    <li class="title">顾客中心</li>
+                                    <li>使用条款</li>
+                                    <li>积分规则</li>
+                                    <li>退换货</li>
+                                    <li>信息保护</li>
+                                    <li>更正说明</li>
+                                </ul>
+                            </div>
+                            <div class="fo-list">
+                                <h4 class="title-4"></h4>
+                                <ul>
+                                    <li class="title">会员社区</li>
+                                    <li>会员权益</li>
+                                    <li>会员俱乐部</li>
+                                    <li>便民中心</li>
+                                </ul>
+                            </div>
+                            <div class="fo-list">
+                                <h4 class="title-5"></h4>
+                                <ul>
+                                    <li class="title">特色服务</li>
+                                    <li>分期付款</li>
+                                    <li>企业团购</li>
+                                    <li>营销联盟</li>
+                                    <li>上门服务</li>
+                                    <li>免费退换货</li>
+                                </ul>
+                            </div>
+                            <div class="fo-list">
+                                <h4 class="title-6"></h4>
+                                <ul>
+                                    <li class="title">商家合作</li>
+                                    <li>合作招商</li>
+                                    <li>合作伙伴</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="footerboard">
+                            <div class="notice">
+                                <h4>公告事项</h4>
+                                <div class="notice_box">
+                                    152期目录活动（8月A）中奖公告
+                                </div>
+                                <span class="more">更多</span>
+                            </div>
+                            <div class="responsii">
+                                <div class="g-social">
+                                    <img src="img/1_20150814190801_94.jpg" alt="">
+                                </div>
+                                <div class="g-social">
+                                    <img src="img/1_20150814190832_60.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="g-footer-content">
+                        <div class="logo-dfmz">
+                            <img src="img/logo_dfmz.png" alt="">
+                            <span>旗下</span>
+                        </div>
+                        <div class="textIntroFooter">
+                            上海东方电视购物有限公司 版权所有 Copyright © 2004-2019 ocj.com.cn All Rights Reserved
+                            <div class="textIntroFooter">免费咨询及订购热线：上海800-708-8000（固话） （021）51119900（手机）
+                                全国800-988-8000（固话） 400-889-8000（手机）</div>
+                            <div class="textIntroFooter">
+                                信息系统安全等级保护评定备案证明编号 31001099027-00001
+                                <span></span>
+                                信息网络传播视听节目许可证：0908230
+                                <span></span>
+                                <a href="###">食品经营许可证：JY13101100062462</a>
+                            </div>
+                            <div class="textIntroFooter">
+                                <a href="###">互联网药品信息服务资格证书（沪）- 非经营性 - 2019-0072</a>
+                                &nbsp;&nbsp;
+                                <a href="###">沪杨食药监械经营许20187004号</a>
+                                &nbsp;&nbsp;
+                                违法和不良信息举报电话：（021）51119921
+                            </div>
+                        </div>
+                        <div class="g-footer-icon">
+                            <div class="g-footer-icon-content">
+                                <div class="g-footer-icon-content-box">
+                                    <ul>
+                                        <li>
+                                            <img src="img/gawb.png" alt="">
+                                        </li>
+                                        <li>
+                                            <img src="img/img.footer.icon.1.png" alt="">
+                                        </li>
+                                        <li>
+                                            <img src="img/star5.png" alt=""
+                                                style="width: 92px;;height: 33px;margin-top: 8px;">
+                                        </li>
+                                        <li>
+                                            <img src="img/img.footer.icon.11.png" alt="">
+                                        </li>
+                                        <li>
+                                            <img src="img/img.footer.icon.3.png" alt="">
+                                        </li>
+                                        <li>
+                                            <img src="img/img.footer.icon.4.png" alt="">
+                                        </li>
+                                        <li>
+                                            <img src="img/img.footer.icon.8.png" alt="">
+                                        </li>
+                                        <li>
+                                            <img src="img/img.footer.icon.9.png" alt="">
+                                        </li>
+                                        <li>
+                                            <img src="img/img.footer.icon.wanggou1.png" alt="">
+                                        </li>
+                                        <li>
+                                            <img src="img/962110.png" alt=""
+                                                style="width: 55px;height: 34px;margin-top:10px;">
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 底部 -->
+</body>
+<script src="lib/jquery-1.10.1.min.js"></script>
+<script src="js/common.js"></script>
+<!-- <script src="js/Wheel.js"></script> -->
+<script src="js/Commonfun.js"></script>
+<script src="js/index.js"></script>
+<script>
+    new loboimg({
+        ele: 'rigBanner'
+    });
+
+</script>
+
+</html>

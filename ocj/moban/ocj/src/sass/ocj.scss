@@ -1,0 +1,2203 @@
+#ocj {
+    width: 100%;
+    height: 100%;
+    // background: red;
+
+    .conten {
+        width: 1189px;
+        height: 100%;
+        position: relative;
+        margin: auto;
+    }
+
+    .ocjhear {
+        #ocj-header {
+            width: 100%;
+            height: 32px;
+            background: #f6f6f6;
+            border-bottom: 1px solid #ccc;
+
+            .com-left {
+                display: flex;
+                height: 100%;
+                font-size: 11px;
+                position: absolute;
+
+                .welc {
+                    display: block;
+                    height: 100%;
+                    text-align: center;
+                    color: #333333;
+                    line-height: 35px;
+                    margin-left: 10px;
+                    margin-right: 17px;
+                }
+
+                .realo {
+                    // width: 140px;
+                    height: 100%; // display: flex;
+                    // justify-content: space-around;
+                    line-height: 35px;
+
+                    #login {
+                        width: 127px;
+                        height: 32px;
+                        margin-right: 3px;
+                        cursor: pointer;
+                    }
+
+                    #register {
+                        margin-right: 2px;
+                    }
+
+                    #login:hover {
+                        text-decoration: underline;
+                    }
+
+                    #register:hover {
+                        cursor: pointer;
+                        text-decoration: underline;
+                    }
+                }
+
+                .tuichu {
+
+                    #out {
+                        cursor: pointer;
+                    }
+
+                    #out:hover {
+                        text-decoration: underline;
+                    }
+                }
+
+
+                .addres {
+                    width: 100px;
+                    height: 100%;
+                    display: flex;
+                    align-items: center;
+                    margin-left: 10px;
+
+                    .addr {
+                        display: block;
+                        width: 18px;
+                        height: 18px;
+                        margin-left: 3px;
+                    }
+
+                    .city {
+                        font-weight: 600;
+                        margin-right: 8px;
+                    }
+
+                    .heel:hover {
+                        cursor: pointer;
+                        text-decoration: underline;
+                        color: #00BFFF;
+                    }
+                }
+            }
+
+            .com-rigth {
+                width: 390px;
+                height: 100%;
+                display: flex;
+                justify-content: space-around;
+                line-height: 35px;
+                font-size: 11px;
+
+                span {
+                    margin-right: 10px;
+                    width: 9px;
+                    height: 14px;
+                }
+
+                .my {
+                    width: 98px;
+                    height: 29px;
+                    float: left;
+                    margin-top: 5px;
+                    line-height: 25px;
+                    position: relative;
+                    border-width: 1px;
+                    border-style: solid;
+                    border-color: #f6f6f6;
+                    display: flex;
+                    justify-content: center;
+
+                    .sx {
+                        width: 9px;
+                        height: 5px;
+                        margin-left: 7px;
+                        font-weight: 600;
+                        color: #b5b5b5;
+                    }
+
+                    .my-nav {
+                        width: 98px;
+                        height: 123px;
+                        position: absolute;
+                        bottom: -124px;
+                        left: -1px;
+                        display: none;
+                        text-align: center;
+                        border-width: 0 1px 1px 1px;
+                        border-style: solid;
+                        border-color: #ccc;
+
+                        li:hover {
+                            cursor: pointer;
+                            text-decoration: underline;
+                            color: #00BFFF;
+                        }
+                    }
+                }
+
+                .my:hover {
+                    background: #fff;
+                    border-width: 1px 1px 0px 1px;
+                    border-style: solid;
+                    border-color: #ccc;
+                    // border-left: 1px solid #ccc;
+                    // border-top: 1px solid #ccc;
+                    // border-right: 1px solid #ccc;
+                    z-index: 10;
+                }
+
+                .my:hover .my-nav {
+                    display: block;
+                    background: #fff;
+                }
+
+                .guke {
+                    width: 77px;
+                    height: 100%;
+                    display: flex;
+                    float: left;
+                }
+
+                .mobelp {
+                    width: 55px;
+                    height: 35px;
+                    display: flex;
+                    float: left;
+                }
+
+                .TVser {
+                    width: 46px;
+                    height: 100%;
+                    display: flex;
+                    float: left;
+                }
+
+                .weixin {
+                    width: 70px;
+                    height: 30px;
+                    display: flex;
+                    justify-content: center;
+                    float: left;
+                    line-height: 25px;
+                    margin-top: 5px;
+                    position: relative;
+                    border-left: 1px solid #f6f6f6;
+                    border-top: 1px solid #f6f6f6;
+                    border-right: 1px solid #f6f6f6;
+
+                    .QR {
+                        width: 280px;
+                        height: 317px;
+                        background: #fff;
+                        position: absolute;
+                        bottom: -315px;
+                        right: -1px;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        display: none;
+
+                        p {
+                            text-decoration: none;
+                            margin-top: 15px;
+                            color: #7d8289;
+                        }
+
+                        .QRimg {
+                            width: 220px;
+                            height: 220px;
+                            background: #f6f6f6;
+
+                            img {
+                                width: 100%;
+                                height: 100%;
+                            }
+                        }
+                    }
+                }
+
+                .weixin:hover {
+                    background: #fff;
+                    border-left: 1px solid #ccc;
+                    border-top: 1px solid #ccc;
+                    border-right: 1px solid #ccc;
+                }
+
+                .weixin:hover .QR {
+                    display: block;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    border: 1px solid #ccc;
+                    z-index: 10;
+                }
+
+                p:hover {
+                    cursor: pointer;
+                    text-decoration: underline;
+                }
+
+            }
+
+        }
+
+        .side-bar {
+            width: 84px;
+            height: 353px;
+            position: fixed;
+            right: 260px;
+            bottom: 20px;
+            z-index: 20;
+            background: #fff;
+
+            .silderNavtop {
+                width: 80px;
+                height: 130px;
+            }
+
+            .rightFixNavButton {
+                margin-top: 11px;
+                width: 84px;
+                height: 104px;
+
+                .rightFixLink {
+                    height: 26px;
+                    line-height: 26px;
+                    text-align: center;
+                    cursor: pointer;
+                    font-size: 12px;
+
+                    a {
+                        color: #3c3c3c;
+                    }
+                }
+
+                .rightFixLink:hover {
+                    background-color: rgb(251, 66, 85);
+                }
+            }
+
+            .server {
+                width: 84px;
+                height: auto;
+                margin-bottom: 10px;
+                position: relative;
+
+                .bird {
+                    border-top: 1px dotted #d3d3d3;
+                    width: 100%;
+                    height: 22px;
+                    padding-top: 55px;
+                    background: #fff url(../img/bg.site.nav.png) 16px -539px no-repeat;
+
+                    a {
+                        color: #5c686e;
+                        font-size: 12px;
+                        position: absolute;
+                        bottom: 36px;
+                        left: 17px;
+
+                    }
+                }
+
+                .go-top {
+                    width: 84px;
+                    height: 30px;
+                    background: #4b4c50 url(../img/bg.site.nav.png) -1px -604px no-repeat;
+                    color: #fff;
+                    font-weight: bold;
+                    text-indent: 23px;
+                    line-height: 30px;
+                    cursor: pointer;
+                    font-size: 12px;
+
+                    a {
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+
+    //搜索
+    .search {
+        width: 100%;
+        height: 92px;
+
+        .conten {
+            display: flex;
+
+            img {
+                display: block;
+            }
+
+            .logo {
+                width: 140px;
+                height: 74px;
+                margin-right: 30px;
+                margin-top: 10px;
+            }
+
+            .tm {
+                width: 210px;
+                height: 70px;
+                margin-top: 17px;
+                position: relative;
+
+                .loading {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    bottom: 0;
+                    right: 0;
+                    margin: auto;
+                }
+            }
+
+            .search-box {
+                width: 450px;
+                height: 70px;
+                padding: 22px 0 0 41px;
+                float: left;
+
+                .search-bar {
+                    width: 450px;
+                    height: 35px;
+                    border: 3px solid #f12e24;
+
+                    #sea-input {
+                        width: 360px;
+                        height: 35px;
+                        padding-left: 10px;
+                        float: left;
+                    }
+
+                    #sear-btn {
+                        width: 80px;
+                        height: 35px;
+                        background: #f12e24;
+                        cursor: pointer;
+                        font-weight: bold;
+                        font-size: 17px;
+                        color: #fff;
+                        float: left;
+                    }
+                }
+
+                .search-down {
+                    width: 467px;
+                    height: 30px;
+                    font-size: 12px;
+
+                    a {
+                        color: #505966;
+                    }
+
+                    a:hover {
+                        text-decoration: underline;
+                        cursor: pointer;
+                    }
+
+                    #keywords {
+                        li {
+                            float: left;
+                            margin-left: 7px;
+                            margin-top: 6px;
+                            margin-right: 8px;
+                            margin-left: 3px;
+                        }
+                    }
+                }
+
+                .hotlist {
+                    width: 100px;
+                    height: 35px;
+                    display: flex;
+                    margin-top: 5px;
+
+                    span {
+                        display: block;
+                        width: 17px;
+                        height: 17px;
+                        background: url(../img/bg.site.nav.png);
+                        background-position: -9px -660px;
+                        margin-right: 10px;
+                    }
+                }
+            }
+        }
+    }
+
+    //header-menu
+
+    .header-menu {
+        width: 100%;
+        height: 34px;
+        background: #f12e24;
+        line-height: 34px;
+
+        .conten {
+            display: flex;
+            font-weight: bold;
+            font-size: 15px;
+
+            .header-bar {
+                width: 220px;
+                height: 100%;
+                text-align: center;
+                line-height: 34px;
+                color: #fff;
+                padding: 0;
+                margin: 0;
+            }
+
+            .header-bar:hover {
+                background: #b8362f;
+            }
+
+            .header-tab {
+                padding: 0 19px;
+                line-height: 34px;
+                color: #fff;
+                font-family: 'Microsoft YaHei';
+            }
+
+            //移入移出效果
+
+            .header-tab:hover {
+                background: #b8362f;
+            }
+
+            .header-tab:nth-of-type(1) {
+                background: #b8362f;
+            }
+        }
+    }
+
+    //主连接
+    .ocj-main {
+        width: 100%;
+        height: 100%;
+        background: #f7f7f7;
+        position: relative;
+
+        .Box-main {
+            margin-bottom: 20px;
+            position: relative;
+
+            .conten {
+                height: 590px;
+                display: flex;
+
+                .ser-bar {
+                    width: 219px;
+                    height: 100%;
+                    border-right: 1px solid #ccc;
+                    z-index: 6;
+
+                    .bar-top {
+                        height: 420px;
+                        background: rgba(247, 247, 247, .8);
+
+                        #bar-list {
+                            height: 100%;
+                            position: relative;
+
+                            li {
+                                margin-left: 15px;
+                                width: 205px;
+                                height: 38px;
+                                display: flex;
+                                align-items: center;
+                                font-size: 12px;
+                                cursor: pointer;
+                                border-color: rgba(247, 247, 247, .1);
+                                border-style: solid;
+                                border-width: 1px 0 1px 1px;
+                                box-sizing: border-box;
+                                z-index: 10;
+
+
+                                .icon {
+                                    font-size: 22px;
+                                    margin-left: 5px;
+                                }
+
+                                .neirong {
+                                    margin-left: 14px;
+                                    cursor: pointer;
+                                }
+
+                                .neirong:hover {
+                                    text-decoration: underline;
+                                    color: #00BFFF;
+                                }
+
+                                .commcent {
+                                    width: 970px;
+                                    height: 590px;
+                                    background: #fff;
+                                    position: absolute;
+                                    top: -10px;
+                                    right: -970px;
+                                    display: none;
+
+                                    .comLeftm {
+                                        width: 283px;
+                                        margin-left: 40px;
+                                        border-right: 1px solid #e3e3e3;
+                                        padding-right: 54px;
+                                        float: left;
+
+                                        p {
+                                            height: 38px;
+                                            border-bottom: 1px solid #ccc;
+                                            font-weight: 600;
+                                            line-height: 38px;
+                                            margin-bottom: 14px;
+                                        }
+
+                                        .comList {
+                                            li {
+                                                border: none;
+                                                width: 100%;
+                                                height: 30px;
+                                                margin: 0;
+                                            }
+
+                                            span {
+                                                font-size: 13px;
+                                                margin-right: 10px;
+                                                cursor: pointer;
+                                            }
+
+                                            span:hover {
+                                                text-decoration: underline;
+                                                color: #00BFFF;
+                                            }
+                                        }
+                                    }
+
+
+                                    .commcentmain {
+                                        width: 295px;
+                                        float: left;
+                                        border-right: 1px solid #e3e3e3;
+
+                                        img {
+                                            width: 295px;
+                                            height: 295px;
+                                        }
+                                    }
+                                }
+                            }
+
+                            li:hover {
+                                background: #fff;
+                                border: 1px solid #ccc;
+                                z-index: 10;
+                            }
+
+                            li:hover .commcent {
+                                display: block;
+                            }
+
+                            li:hover .neirong {
+                                color: #00BFFF;
+                                text-decoration: underline;
+                            }
+
+                            .iconone {
+                                margin-top: 10px;
+                                position: relative;
+                            }
+                        }
+                    }
+
+                    .bar-bottom {
+                        //TV购物
+                        height: 161px;
+                        background: #5e5f5f;
+
+                        .imain {
+                            width: 220px;
+                            height: 39px;
+                            cursor: pointer;
+
+                            .iain {
+                                width: 200px;
+                                height: 100%;
+                                margin: auto;
+                                border-bottom: 1px dashed #ccc;
+                                line-height: 39px;
+                                position: relative;
+
+                                .fore {
+                                    width: 12px;
+                                    height: 13px;
+                                    background: url(../img/frocejuxing.png);
+                                    position: absolute;
+                                    top: 0;
+                                    right: -10px;
+                                    display: none;
+                                }
+
+                                .iain-com {
+                                    width: 970px;
+                                    height: 500px;
+                                    background: #fff;
+                                    position: absolute;
+                                    right: -979px;
+                                    top: -340px;
+                                    display: none;
+
+                                    .iain-comBar {
+                                        width: 107px;
+                                        height: 100%;
+                                        font-size: 13px;
+                                        float: left;
+
+                                        .dianshi {
+                                            display: block;
+                                            width: 84px;
+                                            height: 45px;
+                                            margin: auto;
+                                            border-bottom: 1px solid #e3e3e3;
+                                        }
+
+                                        .Tvshopping {
+                                            margin-left: 17px;
+
+                                            li {
+                                                padding: 0;
+                                                margin: 0;
+                                                height: 36px;
+                                            }
+
+                                            li:hover {
+                                                color: #00BFFF;
+                                                text-decoration: underline;
+                                            }
+                                        }
+
+                                        .hnavLeftBox {
+                                            margin-top: 35px;
+
+                                            div {
+                                                border-bottom: 1px solid #e3e3e3;
+                                            }
+                                        }
+                                    }
+
+                                    .hindexlef {
+                                        // float: left;
+                                        position: relative;
+
+                                        .lef1 {
+                                            float: left;
+                                            margin-left: 29px;
+                                            margin-top: 20px;
+                                        }
+
+                                        .lef2 {
+                                            float: right;
+                                        }
+
+                                        .lef3 {
+                                            float: left;
+                                            margin-left: 23px;
+                                            margin-top: 19px;
+                                        }
+
+                                        .lef4 {
+                                            float: left;
+                                            margin-left: 23px;
+                                            margin-top: 19px;
+                                        }
+
+                                        .lef5 {
+                                            position: absolute;
+                                            right: 0;
+                                            bottom: -500px;
+                                        }
+                                    }
+
+                                    .comBarItem {
+                                        width: 860px;
+                                        float: left;
+
+                                        .comBarItemt {
+                                            width: 818px;
+                                            height: 81px;
+                                            margin: auto;
+                                            margin-top: 20px;
+                                        }
+                                    }
+
+                                    .hIndexkroBannerImg {
+                                        width: 387px;
+                                        height: 460px;
+                                        float: left;
+                                        padding: 0 20px 0 20px;
+                                        margin-top: 20px;
+                                        border-right: 1px dotted #b2b2b2;
+                                    }
+
+                                    .hIndexkroBannerItemList {
+                                        width: 429px;
+                                        height: auto;
+                                        display: inline-block;
+
+                                        .BannerListBox {
+                                            padding: 17px 0 0 20px;
+                                            width: 180px;
+                                            height: auto;
+                                            position: relative;
+                                            float: left;
+                                            display: block;
+
+                                            img {
+                                                width: 180px;
+                                                height: 180px;
+                                            }
+
+                                            p {
+                                                width: 180px;
+                                                height: 20px;
+                                                line-height: 20px;
+                                                text-align: center;
+                                                font-size: 14px;
+                                            }
+                                        }
+                                    }
+
+                                    .oshishangBanner {
+                                        float: left;
+
+                                        .Maxbanner {
+                                            padding: 17px 0 0 20px;
+                                        }
+
+                                        .BannerListBox {
+                                            width: 180px;
+                                            line-height: 20px;
+                                            text-align: center;
+                                            font-size: 12px;
+                                            float: left;
+                                            margin-right: 13px;
+                                            padding: 17px 0 0 20px;
+
+                                            img {
+                                                width: 180px;
+                                                height: 180px;
+
+                                                p {
+                                                    height: 20px;
+                                                    line-height: 20px;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+
+                                .icons {
+                                    border: 1px solid #c40001;
+                                }
+
+                                .icomone {
+                                    right: -979px;
+                                    top: -379px;
+                                    border: 1px solid #ff6728;
+                                }
+
+                                .icomtow {
+                                    right: -979px;
+                                    top: -418px;
+                                    border: 1px solid #61117b;
+                                }
+
+                                .icomthree {
+                                    right: -979px;
+                                    top: -457px;
+                                    border: 1px solid #784830;
+                                }
+                            }
+                        }
+
+                        .imain:hover .fore {
+                            display: block;
+                        }
+
+                        .imain:hover .iain-com {
+                            display: block;
+                        }
+
+                        .imain:nth-child(1):hover {
+                            background: #c40001;
+                        }
+
+                        .imain:nth-child(2):hover {
+                            background: #ff6728;
+                        }
+
+                        .imain:nth-child(3):hover {
+                            background: #61117b;
+                        }
+
+                        .imain:nth-child(4):hover {
+                            background: #784830;
+                        }
+
+                    }
+
+                }
+
+                .right-bar {
+                    width: 968px;
+                    height: 100%;
+
+                    .live-box {
+                        width: 968px;
+                        height: 90px;
+                        display: flex;
+                        align-items: center;
+
+                        .live-bone {
+                            width: 450px;
+                            height: 78px;
+                            float: left;
+                            margin: 0 5px 0 5px;
+
+                            .live-host {
+                                width: 58px;
+                                height: 79px;
+                                float: left;
+                                font-size: 11px;
+                                text-align: center;
+                                position: relative;
+                                cursor: pointer;
+
+                                .hostzhibo {
+                                    height: 38px;
+                                    width: 59px;
+                                    border-style: solid;
+                                    border-width: 1px 0 1px 1px;
+                                    border-color: #ccc;
+                                    line-height: 38px;
+                                    background: #fff;
+                                    position: absolute;
+                                    left: 0;
+                                    cursor: pointer;
+                                }
+
+                                .bg {
+                                    width: 49px;
+                                    height: 10px;
+                                    background: url(../img/xiabianjiao.png);
+                                    position: absolute;
+                                    left: 10px;
+
+                                }
+
+                                .hostzbti {
+                                    height: 40px;
+                                    width: 59px;
+                                    line-height: 40px;
+                                    position: absolute;
+                                    bottom: 0;
+                                }
+                            }
+
+                            .live-hostMain {
+                                width: 390px;
+                                height: 78px;
+                                border: 1px solid #ccc;
+                                float: left;
+                                background: #fff;
+
+                                .TVgoods {
+                                    float: left;
+                                    margin: 4px 0 0 5px;
+
+                                    li {
+                                        width: 266px;
+                                        font-size: 14px;
+                                        display: flex;
+                                        position: relative;
+
+                                        .outtime {
+                                            font-size: 9px;
+                                            position: absolute;
+                                            right: 0;
+                                        }
+
+                                        .price {
+                                            font-size: 15px;
+                                            color: #ea0505;
+                                            font-weight: 600;
+                                            margin-top: 7px;
+                                        }
+
+                                        .jifen {
+                                            width: 16px;
+                                            height: 16px;
+                                            background: #ff8400;
+                                            font-size: 11px;
+                                            color: #fff;
+                                            text-align: center;
+                                            line-height: 16px;
+                                            margin: 10px 0 0 6px;
+                                        }
+
+                                        .lookzb {
+                                            width: 84px;
+                                            height: 22px;
+                                            border: 1px solid #f22d25;
+                                            color: #f22d25;
+                                            text-align: center;
+                                            line-height: 22px;
+                                            position: absolute;
+                                            right: 0;
+                                            cursor: pointer;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+
+                        .live-btow {
+                            width: 387px;
+                            height: 78px;
+                            border: 1px solid #ccc;
+                            float: left;
+
+                            .jian {
+                                position: absolute;
+                                right: 0;
+                                margin-top: 18px;
+                            }
+
+
+                        }
+                    }
+
+                    #rigBanner {
+                        width: 718px;
+                        height: 500px;
+                        position: relative;
+                        float: left;
+                        z-index: 5;
+
+                        .cont {
+                            position: absolute;
+                            height: 500px;
+                            left: -578px;
+                            z-index: 1;
+                            cursor: pointer;
+
+                            #loboimg {
+                                width: 1903px;
+                                height: 500px;
+                            }
+
+                            li {
+                                width: 100%;
+                                height: 100%;
+                                position: absolute;
+
+                                img {
+                                    width: 100%;
+                                    height: 100%;
+                                }
+                            }
+                        }
+
+                        .prve {
+                            display: block;
+                            width: 29px;
+                            height: 45px;
+                            background: #fff;
+                            z-index: 5;
+                            position: absolute;
+                            top: 0;
+                            bottom: 0;
+                            left: 5px;
+                            margin: auto;
+                            line-height: 45px;
+                            text-align: center;
+                            border: 1px solid #ccc;
+                        }
+
+                        .next {
+                            display: block;
+                            width: 29px;
+                            height: 45px;
+                            background: #fff;
+                            z-index: 5;
+                            position: absolute;
+                            top: 0;
+                            bottom: 0;
+                            right: 0;
+                            right: 5px;
+                            margin: auto;
+                            line-height: 45px;
+                            text-align: center;
+                            border: 1px solid #ccc;
+                        }
+
+                        .yd {
+                            position: absolute;
+                            z-index: 999;
+                            bottom: 13px;
+                            left: 0;
+                            right: 0;
+                            display: flex;
+                            justify-content: center;
+
+                            span {
+                                display: block;
+                                width: 10px;
+                                height: 10px;
+                                background: #cccfd4;
+                                font-size: 0;
+                                border-radius: 10px;
+                                float: left;
+                                margin-left: 5px;
+                                cursor: pointer;
+
+                            }
+
+                            .active {
+                                background: #ff0000;
+                            }
+                        }
+
+
+                    }
+
+                    .ri-barright {
+                        width: 250px;
+                        height: 500px;
+                        position: absolute;
+                        right: 0;
+                        z-index: 5;
+
+                        .bannerBox {
+                            position: absolute;
+                            top: 0;
+
+                            .boximg {
+                                margin-bottom: 11px;
+                                position: relative;
+
+                                .conm {
+                                    width: 100%;
+                                    height: 70px;
+                                    position: absolute;
+                                    bottom: 0;
+                                    text-align: center;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+
+        }
+
+        .conten {
+
+            .hItemShowMoney {
+                font-size: 16px;
+                color: #ea0505;
+                text-align: left;
+                padding: 8px 0 0 0;
+                font-weight: bold;
+                font-family: "Arial";
+
+                del {
+                    color: #bbbbbb;
+                    font-size: 12px;
+                    margin-left: 6px;
+                    font-weight: normal;
+                }
+            }
+
+            .newchantop {
+                height: 714px;
+
+                .newChannelTitle {
+                    height: 44px;
+                    font-size: 24px;
+                    color: #424242;
+                    margin-left: 10px;
+
+
+                    span {
+                        font-size: 15px;
+                        margin-left: 30px;
+                        cursor: pointer;
+                    }
+
+                    span:hover {
+                        text-decoration: underline;
+                        color: #00BFFF;
+                    }
+                }
+
+                .indexTvr {
+                    width: 418px;
+                    height: 665px;
+                    border: 1px solid #ccc;
+                    background: #fff;
+                    float: left;
+
+                    .indexTvrImg {
+                        width: 418px;
+                        height: 418px;
+
+                        img {
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+
+                    .indexTvrTitle {
+                        height: 97px;
+                        width: 100%;
+                        display: inline-block;
+                        border-bottom: 1px dashed #ccc;
+
+                        .indexTvrTitleItem {
+                            margin-top: 22px;
+                            font-size: 12px;
+                            margin-left: 11px;
+                        }
+                    }
+
+                    .indexTvrtuijian {
+                        height: 49px;
+                        font-size: 13px;
+                        line-height: 49px;
+                        margin-left: 15px;
+                    }
+
+                    .xingbijia {
+                        width: 386px;
+                        height: 66px;
+                        border: 1px solid #ccc;
+                        margin: auto;
+                        background: #f7f7f7;
+
+                        p {
+                            font-size: 11px;
+                            margin: 18px 0 0 15px;
+                        }
+                    }
+                }
+
+                .indexTvrebo {
+                    width: 748px;
+                    height: 666px;
+                    float: right;
+
+                    .Tvrebos {
+                        width: 220px;
+                        height: 305px;
+                        padding: 8px;
+                        border: 1px solid #ccc;
+                        float: left;
+                        margin-right: 17px;
+                        background: #fff;
+
+                        .hCommonItem {
+                            width: 220px;
+                            height: 297px;
+
+                            .hItemShowImg {
+                                width: 220px;
+                                height: 220px;
+
+                                img {
+                                    width: 100%;
+                                    height: 100%;
+                                }
+                            }
+                        }
+
+                        .hItemShowTitle {
+                            line-height: 18px;
+                            height: 36px;
+                            margin: 12px 0 8px 0;
+                            padding: 0 0 0 5px;
+                            overflow: hidden;
+                            cursor: pointer;
+                        }
+
+                        .hItemShowTitle:hover {
+                            color: #00BFFF;
+                            text-decoration: underline;
+                        }
+
+
+                    }
+
+                    .non {
+                        margin-right: 0;
+                    }
+
+                    .ma-t {
+                        margin-top: 20px;
+                    }
+                }
+            }
+
+            .newChannelTitletow {
+                height: 380px;
+                font-size: 24px;
+                color: #424242;
+
+                span {
+                    font-size: 15px;
+                    margin-left: 30px;
+                    cursor: pointer;
+                }
+
+                span:hover {
+                    text-decoration: underline;
+                    color: #00BFFF;
+                }
+
+                .newchan {
+                    height: 44px;
+                    font-size: 24px;
+                    color: #424242;
+                    width: 99%;
+                    height: 44px;
+                    font-size: 24px;
+                    color: #424242;
+                    padding-left: 10px;
+                    position: relative;
+                    margin-top: 10px;
+                }
+
+                .indexTvreboLeft {
+                    width: 418px;
+                    height: 322px;
+                    position: relative;
+                    margin-right: 20px;
+                    background: #fff;
+                    float: left;
+                    border: 1px solid #ccc;
+
+                    a {
+                        display: block;
+                        margin: 10px 0 0 10px;
+                    }
+                }
+
+                .indexTvreboRight {
+                    width: 748px;
+                    height: 323px;
+                    float: right;
+                    font-size: 16px;
+
+                    .Tvrebos {
+                        width: 220px;
+                        height: 305px;
+                        padding: 8px;
+                        border: 1px solid #ccc;
+                        float: left;
+                        margin-right: 17px;
+                        background: #fff;
+
+                        .hCommonItem {
+                            width: 220px;
+                            height: 297px;
+
+                            .hItemShowImg {
+                                width: 220px;
+                                height: 220px;
+
+                                img {
+                                    width: 100%;
+                                    height: 100%;
+                                }
+                            }
+                        }
+
+                        .hItemShowTitle {
+                            line-height: 18px;
+                            height: 36px;
+                            margin: 12px 0 8px 0;
+                            padding: 0 0 0 5px;
+                            overflow: hidden;
+                            cursor: pointer;
+                        }
+
+                        .hItemShowTitle:hover {
+                            color: #00BFFF;
+                            text-decoration: underline;
+                        }
+                    }
+                }
+            }
+
+            .hindexBanner {
+                width: 100%;
+                margin-top: 25px;
+            }
+
+            // 楼层模板
+
+            #clearmar {
+                margin: 0;
+                height: 347px;
+            }
+
+            .ProtListBox {
+                height: 645px;
+                margin-top: 30px;
+                margin-bottom: 30px;
+
+                .ProListBoxtitle {
+                    font-size: 24px;
+                    color: #424242;
+                    padding-left: 10px;
+                    padding-bottom: 11px;
+                    border-bottom: 1px solid #424242;
+                    margin-bottom: 10px;
+                    position: relative;
+
+                    span {
+                        margin-left: 30px;
+                        font-size: 16px;
+                        color: #727272;
+                    }
+                }
+
+                .ProtListBoxLeft {
+                    width: 290px;
+                    height: 587px;
+                    border: 1px solid #ccc;
+                    float: left;
+
+                    .ProtListBoxLeftItemimg {
+                        width: 290px;
+                        height: 350px;
+                    }
+                }
+
+                .ProtListBoxRight {
+                    width: 890px;
+                    height: 592px;
+                    float: right;
+                    margin-left: 3px;
+
+                    .tItemList {
+                        float: left;
+                        width: 218px;
+                        height: 291px;
+                        background-color: #ffffff;
+                        margin: 0 0 5px 5px;
+
+                        .hCommonItem {
+                            .hItemShowImg {
+                                width: 216px;
+                                height: 220px;
+
+                                img {
+                                    width: 216px;
+                                    height: 100%;
+                                }
+                            }
+
+
+                            a {
+                                display: block;
+                                line-height: 18px;
+                                height: 36px;
+                                margin: 4px 0 0 0;
+                                padding: 0 0 0 5px;
+                                overflow: hidden;
+                                font-size: 13px;
+                            }
+
+                            a:hover {
+                                color: #00BFFF;
+                                text-decoration: underline;
+                            }
+
+                            .hItemShowMoney {
+                                padding-left: 10px;
+                            }
+                        }
+                    }
+                }
+            }
+
+            // 主题入口
+
+            .hSysButton {
+                right: 0;
+                left: auto;
+                bottom: 9px;
+                top: auto;
+                padding: 3px 15px;
+                border: 1px solid #dbdbdb;
+                position: absolute;
+                background: #ffffff;
+                font-size: 11px;
+                cursor: pointer;
+                text-align: center;
+            }
+
+            a {
+                color: #333333;
+            }
+
+            .hSysButton:hover {
+                border: 1px solid #00BFFF;
+            }
+
+            .hSysButton:hover a {
+                text-decoration: underline;
+                color: #00BFFF;
+            }
+
+            .storeThemeBox {
+                width: 100%;
+                height: 813px;
+
+
+
+                .ProtListBoxTitle {
+                    font-size: 24px;
+                    color: #424242;
+                    padding-left: 10px;
+                    padding-bottom: 11px;
+                    border-bottom: 1px solid #424242;
+                    // margin-bottom: 10px;
+                    position: relative;
+
+
+                }
+
+                .storeWrap {
+
+                    .storeThemeItem {
+                        width: 589px;
+                        height: 375px;
+                        float: left;
+                        margin-top: 10px;
+                        background: #fff;
+
+                        .hItemtitle {
+                            line-height: 18px;
+                            height: 36px;
+                            padding: 5px 10px 0 10px;
+                            overflow: hidden;
+                            font-size: 14px;
+                            color: #2c2c2c;
+                            text-align: left;
+                            cursor: pointer;
+                        }
+
+                        .hItemtitle:hover a {
+                            color: #00BFFF;
+                            text-decoration: underline;
+                        }
+
+                        .storeTheme {
+                            height: 145px;
+                            background: red;
+
+
+                            .stbLogoImg {
+                                position: relative;
+                                width: 250px;
+                                float: left;
+
+                                .stbLogoPrdTtl {
+                                    position: absolute;
+                                    top: 24px;
+                                    width: 100%;
+                                    text-align: center;
+                                    color: #000;
+                                    font-size: 20px;
+                                    font-family: "Microsoft YaHei", Arial, Helvetica, sans-serif;
+                                }
+
+                                .stbLogoBtn {
+                                    display: inline-block;
+                                    padding: 10px 3%;
+                                    text-align: center;
+                                    font-size: 16px;
+                                    color: #1c4976;
+                                    border: 1px solid #1c4976;
+                                    border-radius: 15px;
+                                    position: absolute;
+                                    left: 65px;
+                                    top: 68px;
+                                    cursor: pointer;
+                                }
+
+                                .stbLogoBtn:hover {
+                                    border: 1px solid #EA0505;
+                                    color: #EA0505;
+                                }
+                            }
+
+                            .stbLogoPrd {
+                                float: left;
+                                position: relative;
+                                width: 339px;
+                                height: 145px;
+                                background-color: #e9ecf0;
+
+                                .stbLogoPrdInfo {
+                                    width: 170px;
+                                    margin-right: 15px;
+                                    margin-top: 40px;
+                                    float: right;
+
+
+
+
+
+
+                                    .stbLogoPrdInfoLink {
+                                        display: inline-block;
+                                        font-size: 16px;
+                                        color: #ea0505;
+                                        text-align: left;
+                                        font-weight: bold;
+                                        font-family: "Arial";
+                                        margin-left: 4px;
+                                        margin-top: 5px;
+                                    }
+                                }
+
+                                .stbLogoPrdBtn {
+                                    width: 117px;
+                                    height: 117px;
+                                    float: right;
+                                    margin-right: 15px;
+                                    margin-top: 15px;
+
+                                    img {
+                                        width: 100%;
+                                        height: 100%;
+                                    }
+                                }
+                            }
+                        }
+
+                        .storeThemeList {
+                            height: 230px;
+                            // background: #58bc58;
+
+                            padding: 20px 0 10px 0;
+
+                            .stbListItem {
+                                width: 170px;
+                                float: left;
+                                margin: 0 13px;
+                                padding-bottom: 30px;
+                                position: relative;
+
+                                img {
+                                    width: 170px;
+                                    height: 170px;
+                                }
+
+                                .stbListItemTxt {
+                                    width: 170px;
+                                    position: absolute;
+                                    bottom: -2px;
+                                    background: rgba(255, 255, 255, 0.8);
+
+                                    .stbListItemPrice {
+                                        text-align: center;
+                                        font-size: 16px;
+                                        color: #ea0505;
+                                        font-weight: bold;
+                                        font-family: "Arial";
+                                        margin-top: 5px;
+                                    }
+
+                                    a {
+                                        position: absolute;
+                                        height: 49px;
+                                        width: 140px;
+                                        left: 18px;
+                                    }
+
+                                }
+
+
+                            }
+                        }
+                    }
+                }
+            }
+
+            .hyouwilllike {
+                height: 294px;
+                margin-top: 8px;
+                display: flex;
+                justify-content: space-around;
+                background: #fff;
+
+                .hyouwilllikeItems {
+                    width: 230px;
+                    height: 294px;
+                    border: 1px solid #ccc;
+
+
+                    .hCommonItem {
+                        width: 220px;
+                        height: 284px;
+                        margin: 5px;
+
+                        .hItemShowImg {
+                            img {
+                                width: 100%;
+                                height: 100%;
+                            }
+
+                        }
+
+                        a {
+                            display: block;
+                            width: 220px;
+                            font-size: 14px;
+                            line-height: 18px;
+                            height: 27px;
+                            margin: 4px 0 3px 0;
+                            cursor: pointer;
+                        }
+
+                        a:hover {
+                            text-decoration: underline;
+                            color: #00BFFF;
+                        }
+                    }
+                }
+            }
+
+            // 会员
+            .huiyuan {
+                width: 100%;
+                height: 323px;
+                background: #f7f7f7;
+                margin-top: 78px;
+
+                .huiyuanConentShow {
+                    width: 427px;
+                    height: 323px;
+                    float: left;
+
+                    .huiyuanBanner {
+                        width: 427px;
+                        height: 210px;
+                        position: relative;
+                        overflow: hidden;
+                        background: #333333;
+                    }
+
+                    .huiyuanIconList {
+                        border: 1px solid #c2c2c2;
+                        border-top: none;
+                        height: 112px;
+                        background-color: #ffffff;
+                        padding-left: 14px;
+
+                        .IconList {
+                            .huiyuantitle {
+                                font-size: 16px;
+                                color: #636363;
+                                padding-top: 7px;
+                                padding-bottom: 7px;
+                                padding-left: 10px;
+                            }
+
+                            .huiyuanList {
+                                width: 66px;
+                                height: 66px;
+                                float: left;
+                                cursor: pointer;
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: center;
+                                align-items: center;
+
+                                img {
+                                    display: block;
+                                    width: 45px;
+                                    height: 45px;
+                                    position: relative;
+                                    top: 0;
+                                }
+
+                                a {
+                                    font-size: 13px;
+                                    margin-top: 4px;
+
+                                }
+                            }
+
+                            a:hover {
+                                color: #00BFFF;
+                                text-decoration: underline;
+                            }
+                        }
+                    }
+                }
+
+                .huiyuanConentShowNav {
+                    position: relative;
+                    float: right;
+                    width: 750px;
+                    height: 323px;
+                    margin-left: 10px;
+                    background: #f7f7f7;
+
+                    .ShowNavtabBar {
+                        width: 717px;
+                        height: 51px;
+                        border-bottom: 1px solid #424242;
+                        padding-left: 33px;
+                    }
+
+                    .ShowNavtabBarButtonn {
+                        float: left;
+                        padding-top: 1px;
+                        height: 48px;
+                        line-height: 48px;
+                        text-align: center;
+                        border: 1px solid #f7f7f7;
+                        font-size: 16px;
+                        cursor: pointer;
+                        width: 149px;
+                        position: relative;
+
+                        .yingzi {
+                            display: inline-block;
+                            position: absolute;
+                            top: 5px;
+                            right: -16px;
+                            display: none;
+                        }
+                    }
+
+                    .hfroce {
+                        padding-top: 1px;
+                        border-top-left-radius: 5px;
+                        border-top-right-radius: 5px;
+                        border: 1px solid #424242;
+                        border-bottom: 1px solid #f6f6f7;
+                        top: 1px;
+                        position: relative;
+                    }
+
+                    .NavtabShowContent {
+                        margin-top: 9px;
+                        width: 100%;
+                        height: 349px;
+                    }
+
+                    .NavtabShowContentList {
+                        width: 100%;
+                        height: auto;
+                        display: none;
+
+                        .hItemShowTitle {
+                            line-height: 18px;
+                            height: 36px;
+                            margin: 4px 0 3px 0;
+                            padding: 0 0 0 5px;
+                            font-size: 14px;
+                            color: #2c2c2c;
+                            text-align: left;
+                            cursor: pointer;
+                        }
+
+                        .hItemShowTitle:hover {
+                            text-decoration: underline;
+                            color: #00BFFF;
+                        }
+
+                        .hItemShowDuihuanDel {
+                            font-size: 14px;
+                            color: #acacac;
+                            padding-left: 5px;
+                            margin-bottom: 2px;
+                            margin-top: -2px;
+
+                            sapn {
+                                font-size: 12px;
+                                font-family: "Arial", "Microsoft Yahei";
+                            }
+                        }
+
+                        .hItemShowDuihuan {
+                            font-size: 12px;
+                            color: #ea0505;
+                            padding-left: 5px;
+                            margin-bottom: 5px;
+                            font-weight: 600;
+                        }
+
+                        .hItemShowShengyu {
+                            background-color: #5d5656;
+                            color: #ffffff;
+                            float: left;
+                            margin-left: 5px;
+                            font-size: 12px;
+                            padding: 0 5px 2px 5px;
+                        }
+
+                        .NavtabShowContentItem {
+                            float: left;
+                            width: 170px;
+                            padding: 5px;
+                            background-color: #ffffff;
+                            margin-right: 7px;
+                            background: #fff;
+                            border: 1px solid #fff;
+
+                            .hItemShowImg {
+
+
+                                img {
+                                    width: 100%;
+                                    height: 100%;
+                                }
+                            }
+
+
+
+
+                        }
+
+                        .NavtabShowContentItem:hover {
+                            border: 1px solid #f40;
+                        }
+
+                        .tabShowContentItem2 {
+                            position: relative;
+                            width: 330px;
+                            padding: 0 10px 10px 10px;
+                            background: #ffffff;
+                            margin-right: 10px;
+                            float: left;
+                            border: 1px solid #fff;
+
+                            .hCommonItemTipR {
+                                position: absolute;
+                                top: 0;
+                                right: 10px;
+                                z-index: 1;
+
+                                .hCommonItemTipBm {
+                                    width: 100px;
+                                    height: 59px;
+                                    background-image: url(../img/bgalpha80.png);
+                                    position: relative;
+
+                                    .hindexCommodityTipTitle {
+                                        text-align: center;
+                                        color: #ffffff;
+                                        font-size: 12px;
+                                        padding-top: 3px;
+                                        margin-bottom: 3px;
+
+                                        span {
+                                            color: #ff4a01;
+                                            font-size: 18px;
+                                            position: relative;
+                                            top: 3px;
+                                        }
+                                    }
+
+                                    .hindexCommodityTipReduce {
+                                        color: #bfbfbf;
+                                        text-align: center;
+                                        font-size: 12px;
+                                    }
+                                }
+                            }
+
+                            .hCommonItem {
+                                position: relative;
+
+                                img {
+                                    width: 100%;
+                                    height: 100%;
+                                }
+                            }
+
+                            .hCommonItemPosreal {
+                                position: relative;
+                                padding-top: 2px;
+
+
+                            }
+
+                            .hItemShowDuihuan {
+                                position: absolute;
+                                top: 0;
+                                right: 0;
+                            }
+
+
+                        }
+
+                        .tabShowContentItem2:hover {
+                            border: 1px solid #f40;
+                        }
+                    }
+                }
+            }
+        }
+
+        //底部
+
+    }
+
+    .footerConent {
+        margin-top: 10px;
+
+        .conten {
+            .t-footer {
+                height: 169px;
+
+                .footermenu {
+                    width: 838px;
+                    height: 184px;
+                    float: left;
+                    margin-top: 10px;
+
+                    .fo-list {
+                        width: 115px;
+                        height: 145px;
+                        float: left;
+                        margin-left: 20px;
+
+                        h4 {
+                            margin: 0 auto 11px auto;
+                        }
+
+                        .title-1 {
+                            width: 30px;
+                            height: 29px;
+                            background: url(../img/newflootimg0.png);
+                        }
+
+                        .title-2 {
+                            width: 31px;
+                            height: 31px;
+                            background: url(../img/newflootimg1.png);
+                        }
+
+                        .title-3 {
+                            width: 33px;
+                            height: 33px;
+                            background: url(../img/newflootimg2.png);
+                        }
+
+                        .title-4 {
+                            width: 34px;
+                            height: 33px;
+                            background: url(../img/newflootimg3.png);
+                        }
+
+                        .title-5 {
+                            width: 32px;
+                            height: 32px;
+                            background: url(../img/newflootimg4.png);
+                        }
+
+                        .title-6 {
+                            width: 33px;
+                            height: 31px;
+                            background: url(../img/newflootimg6.png);
+                        }
+
+                        ul {
+                            width: 81px;
+                            margin-left: 31px;
+
+                            li {
+                                height: 20px;
+                                line-height: 20px;
+                                font-size: 11px;
+                                color: #6d7177;
+                                cursor: pointer;
+                            }
+
+                            .title {
+                                font-size: 14px;
+                                font-family: 'Microsoft YaHei';
+                                font-weight: bold;
+                                color: #505966;
+                                height: 25px;
+                            }
+
+                            .title:hover {
+                                color: #505966;
+                                text-decoration: none;
+                            }
+
+                            li:hover {
+                                color: #00BFFF;
+                                text-decoration: underline;
+                            }
+                        }
+                    }
+
+                }
+
+                .footerboard {
+                    width: 338px;
+                    height: 149px;
+                    float: left;
+                    margin-left: 10px;
+                    margin-top: 27px;
+                    border: 1px solid #ccc;
+                    box-sizing: border-box;
+                    background: #fff;
+
+                    .notice {
+                        height: 29px;
+                        color: #505966;
+                        line-height: 29px;
+                        margin: 5px 0;
+
+                        h4 {
+                            float: left;
+                            font-family: 'Microsoft YaHei';
+                            font-size: 14px;
+                            margin-left: 13px;
+                            // cursor: pointer;
+                        }
+
+                        .notice_box {
+                            height: 29px;
+                            overflow: hidden;
+                            float: left;
+                            width: 200px;
+                            overflow: hidden;
+                            margin-left: 10px;
+                            font-size: 12px;
+                            color: #00BFFF;
+                        }
+
+                        .notice_box:hover {
+                            text-decoration: underline
+                        }
+
+                        .more {
+                            float: left;
+                            margin-left: 12px;
+                            color: #505966;
+                            font-size: 12px;
+                        }
+                    }
+
+                    .responsii {
+                        height: 87px;
+
+                        .g-social {
+                            width: 158px;
+                            height: 87px;
+                            float: left;
+                            margin-left: 7px;
+                        }
+                    }
+                }
+
+                .g-footer-fr-board {
+                    float: right;
+                    height: 147px;
+                    width: 338px;
+                    border: 1px solid #d9d9d9;
+                    margin-left: 10px;
+                }
+            }
+
+            .g-footer-content {
+                border-top: 3px solid #5c686e;
+                height: auto;
+                margin-top: 35px;
+                padding-top: 20px;
+                position: relative;
+
+                .logo-dfmz {
+                    width: 170px;
+                    height: 42px;
+                    position: absolute;
+
+                    img {
+                        width: 126px;
+                        height: 100%;
+                    }
+
+                    span {
+                        color: #82888b;
+                        font-size: 12px;
+                    }
+                }
+
+                .textIntroFooter {
+                    text-align: center;
+                    color: #82888b;
+                    font-size: 12px;
+                    padding: 2px 0;
+
+                    span {
+                        margin: 0 8px;
+                    }
+                }
+            }
+
+            .g-footer-icon {
+                width: 100%;
+                height: 78px;
+                padding-bottom: 50px;
+
+                .g-footer-icon-content-box {
+                    width: 960px;
+                    margin: auto;
+                    position: relative;
+
+                    li {
+                        float: left;
+                        margin-right: 10px;
+                    }
+                }
+            }
+        }
+    }
+}

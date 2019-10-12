@@ -1,0 +1,266 @@
+#Middle {
+    .conten {
+        width: 1190px;
+        margin: auto;
+
+        .Middle-reg {
+            width: 100%;
+            height: 584px;
+            // background: #f6f6f6;
+
+            .regist_nav {
+                height: 70px;
+                background: #239cdc;
+
+                #regist_nv_nav_list {
+                    float: left;
+                    margin-left: 57px;
+                    padding-top: 10px;
+
+                    li {
+                        float: left;
+                        width: 204px;
+                        height: 60px;
+                        text-align: center;
+                        line-height: 60px;
+                        cursor: pointer;
+                        color: #fff;
+                    }
+                }
+
+                .logined {
+                    float: left;
+                    margin-left: 190px;
+                    margin-top: 30px;
+                    color: #ffffff;
+                    font-family: "Microsoft Yahei", Arial, Helvetica, sans-serif;
+                    font-size: 14px;
+
+                    a {
+                        color: #002d45;
+                    }
+
+                    a:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
+
+            .regist_cont {
+                width: 100%;
+                height: 514px;
+                display: inline-block;
+                background: url(../img/regist_nv_line_bg.jpg) repeat-y center;
+
+                .leftbar {
+                    float: left;
+                    width: 862px;
+
+                    .regist_user {
+                        width: 100%;
+                        display: none;
+
+                        .regist_device {
+                            .regist_item_box {
+                                padding-top: 25px;
+
+                                .regist_item_hdr {
+                                    position: relative;
+                                    width: 760px;
+                                    margin: 0 auto;
+                                    border-bottom: 1px dotted #666666;
+                                    padding-bottom: 12px;
+
+                                    h3 {
+                                        color: #3c3c3c;
+                                        font-size: 30px;
+                                        font-family: "Microsoft Yahei", Arial, Helvetica, sans-serif;
+                                        font-weight: normal;
+                                        margin-left: 215px;
+
+                                        img {
+                                            vertical-align: -10px;
+                                        }
+
+                                        span {
+                                            font-size: 16px;
+                                        }
+                                    }
+
+                                    .change1 {
+                                        padding-left: 20px;
+                                        background: url(../img/regist_ml_icon.jpg) no-repeat left 4px;
+                                        position: absolute;
+                                        right: 0;
+                                        top: 20px;
+                                        font-size: 10px;
+                                        color: #333;
+                                    }
+
+                                    .change1:hover {
+                                        text-decoration: underline;
+                                        color: #239cdc;
+                                    }
+                                }
+
+                                .regist_item_form {
+                                    padding-left: 125px;
+                                    padding-top: 60px;
+
+                                    .resist_item {
+                                        padding: 5px 0;
+                                        display: flex;
+                                        font-size: 12px;
+
+                                        .label {
+                                            width: 110px;
+                                            padding-right: 10px;
+                                            height: 35px;
+                                            line-height: 35px;
+                                            text-align: right;
+                                            color: #2f313a;
+                                            font-size: 14px;
+                                            font-family: "Microsoft Yahei", Arial, Helvetica, sans-serif;
+                                            margin-top: 3px;
+
+                                            em {
+                                                display: inline-block;
+                                                height: 35px;
+                                                line-height: 35px;
+                                                color: #239cdc;
+                                                font-family: Arial, Helvetica, sans-serif;
+                                                vertical-align: -4px;
+                                            }
+                                        }
+
+                                        .field {
+                                            position: relative;
+                                            border: 1px solid #ccc;
+
+                                            .hock {
+                                                color: #333333;
+                                                font-size: 16px;
+                                                height: 20px;
+                                                line-height: 20px;
+                                                width: 258px;
+                                                padding: 6px 30px 7px 10px;
+                                            }
+                                        }
+
+                                        // .active {
+                                        //     border: 1px solid cornflowerblue;
+                                        // }
+
+                                        .tips_e {
+                                            float: left;
+                                            margin-left: 10px;
+                                            padding: 0px 5px 0px 5px;
+                                            background: #fff4f5;
+                                            border: #f0b8be 1px solid;
+                                            width: 170px;
+                                            height: 33px;
+                                            font-size: 12px;
+                                            text-align: center;
+                                            line-height: 33px;
+                                        }
+
+                                        #tips {
+                                            width: 110px;
+                                            height: 35px;
+                                            line-height: 35px;
+                                            text-align: center;
+                                            background: url(../img/regist_val_btn.jpg) no-repeat;
+                                            color: #353535;
+                                            cursor: default;
+                                            margin-left: 10px;
+                                            letter-spacing: 10px;
+                                            font-size: 18px;
+                                        }
+
+                                        .Strength {
+                                            width: 184px;
+                                            height: 36px;
+                                            margin-left: 120px;
+
+                                            .Strengthbar {
+                                                height: 18px;
+                                                background: url(../img/img_pwd_1.png) no-repeat;
+                                                display: flex;
+
+                                                .weak {
+                                                    height: 8px;
+                                                    background: red;
+                                                    border-top-left-radius: 20px;
+                                                    border-bottom-left-radius: 20px;
+                                                    margin: 3px 0 0 8px;
+                                                }
+
+                                                .secondary {
+                                                    height: 8px;
+                                                    background: #FF7F50;
+                                                    margin: 3px 0 0 4px;
+                                                }
+
+                                                .strong {
+                                                    height: 8px;
+                                                    background: #32CD32;
+                                                    border-top-right-radius: 20px;
+                                                    border-bottom-right-radius: 20px;
+                                                    margin: 3px 0 0 5px;
+                                                }
+                                            }
+
+                                            .Strerngthtitle {
+                                                span {
+                                                    color: #707070;
+                                                    float: left;
+                                                    font-size: 12px;
+                                                    text-align: center;
+                                                    width: 58px;
+                                                }
+                                            }
+                                        }
+
+                                        .lisense {
+                                            color: #3333ff;
+                                        }
+
+                                        .lisense:hover {
+                                            text-decoration: underline;
+                                        }
+
+                                        .submit {
+                                            margin-top: 6px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .qrcode_box {
+                    padding: 20px 0 30px 0;
+
+                    .txt_info {
+                        text-align: center;
+                        color: #0e4971;
+                        font-size: 14px;
+                        font-family: "Microsoft Yahei", Arial, Helvetica, sans-serif;
+                        margin: 10px 0;
+                    }
+
+                    .port {
+                        text-align: center;
+                    }
+
+                    .txt_info2 {
+                        margin-bottom: 35px;
+                    }
+                }
+            }
+        }
+
+
+    }
+}

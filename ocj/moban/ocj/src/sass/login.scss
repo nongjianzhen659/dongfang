@@ -1,0 +1,169 @@
+.container {
+    #containerContent {
+        width: 1110px;
+        margin: auto;
+
+        .loginnew_box {
+            width: 870px;
+            margin-left: 95px;
+            padding: 50px 0 70px 0;
+            position: relative;
+            display: flex;
+
+            .lcol {
+                width: 450px;
+
+                .slideshow {
+                    margin-top: 28px;
+
+                    .slider {
+                        // position: relative;
+                        width: 450px;
+                        height: 300px;
+                        overflow: hidden;
+                    }
+                }
+            }
+
+            .rcol {
+                float: right;
+                width: 360px;
+                margin-left: 60px;
+                border: 1px solid #ccc;
+
+                .form_wrap {
+                    border: 5px solid #f7f7f7;
+
+                    .form {
+                        border: 1px solid #e7e7e7;
+                        height: 353px;
+                        padding-left: 39px;
+                        padding-top: 15px;
+
+                        .item {
+                            margin-bottom: 14px;
+                            position: relative;
+
+                            .label {
+                                width: 270px;
+                                color: #474747;
+                                font-size: 13px;
+                                font-weight: bold;
+                                padding-bottom: 4px;
+                                font-family: "Microsoft Yahei", Arial, Helvetica, sans-serif;
+
+                                .forget {
+                                    float: right;
+                                    color: #505966;
+                                    font-size: 12px;
+                                    margin-top: 2px;
+                                }
+
+                                .forget:hover {
+                                    text-decoration: underline;
+                                }
+                            }
+
+                            .field {
+                                position: relative;
+
+                                #username {
+                                    background: url(../img/newlogin.inputbg1.jpg) no-repeat;
+                                }
+
+                                #password {
+                                    background: url(../img/newlogin.inputbg2.jpg) no-repeat;
+                                }
+
+
+                            }
+
+                            .register {
+                                position: absolute;
+                                right: 0;
+                                top: -2px;
+                                top: 0;
+                                color: #0080c6;
+                                font-weight: bold;
+                                font-size: 14px;
+                                font-family: "Microsoft Yahei", Arial, Helvetica, sans-serif;
+                            }
+                        }
+
+                        #confi {
+                            width: 78px;
+                            height: 20px;
+                            padding-left: 10px;
+                            padding-right: 20px;
+                            padding: 10px 20px 10px 10px;
+                            border: 1px solid #c9c8cf;
+                        }
+
+                        #vercode {
+                            width: 100px;
+                            height: 42px;
+                            display: block;
+                            text-align: center;
+                            line-height: 42px;
+                            letter-spacing: 7px;
+                            font-size: 23px;
+                        }
+
+
+                        .valcode {
+                            display: inline-block;
+                            zoom: 1;
+                            height: 32px;
+                            line-height: 16px;
+                            vertical-align: middle;
+                            cursor: pointer;
+                            margin-top: 4px;
+                            font-size: 12px;
+                        }
+
+                        .valcode:hover {
+                            text-decoration: underline;
+                        }
+
+                        .hock {
+                            height: 20px;
+                            line-height: 20px;
+                            width: 203px;
+                            padding: 6px 30px 7px 35px;
+                            border: 1px solid #c9c8cf;
+                        }
+
+                        .submit {
+                            margin-bottom: 15px;
+                            cursor: pointer;
+                        }
+
+                        .line {
+                            margin: 0;
+                            padding: 0;
+                            font-size: 0;
+                        }
+
+                        .others {
+                            position: relative;
+                            width: 270px;
+                            color: #a4a4a4;
+                            margin-top: 12px;
+                            font-size: 12px;
+
+                            .others_link {
+                                position: absolute;
+                                right: 3px;
+                                top: 0;
+
+                                a {
+                                    margin-left: 10px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
